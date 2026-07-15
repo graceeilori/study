@@ -1,10 +1,10 @@
 import React from 'react';
 
 const IconGrey = () =>
-    <img src="/my-study/assets/design-a-grey.svg" alt="S Icon Unaffected" width="48" height="48" />
+    <img src="/my-study/assets/design-a-grey.svg" alt="Icon Unaffected" width="48" height="48" />
 
 const IconBlack = () =>
-    <img src="/my-study/assets/design-a-black.svg" alt="S Icon Affected" width="48" height="48" />
+    <img src="/my-study/assets/design-a-black.svg" alt="Icon Affected" width="48" height="48" />
 
 const color: { [key: string]: React.FC } = {
     grey: IconGrey,
