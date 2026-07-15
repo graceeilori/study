@@ -1,0 +1,150 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Evaluating Visualizations related to Chronic Kidney Disease",
+    "version": "1.0",
+    "authors": [
+      "Grace Ilori"
+    ],
+    "date": "2026-07-06",
+    "description": "A study consisting of a demographic questionnaire, visualization literacy assessment, and visualization tasks.",
+    "organizations": [
+      "Interactions Lab",
+      "University of Calgary"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "grace.ilori@ucalgary.ca",
+    "helpTextPath": "my-study/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "withSidebar": true,
+    "sidebarWidth": 200,
+    "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
+  },
+  "importedLibraries": [
+    "mini-vlat"
+  ],
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "my-study/assets/introduction.md",
+      "response": []
+    },
+    "visualization-consent": {
+      "type": "markdown",
+      "path": "my-study/assets/consent.md",
+      "response": [
+        {
+          "id": "participant-signature",
+          "prompt": "By selecting ‘Yes’ and continuing to the survey, you indicate that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
+          "location": "belowStimulus",
+          "type": "radio",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        }
+      ]
+    },
+    "demographics-personal": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "age-group",
+          "prompt": "What is your age?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "numerical",
+          "placeholder": "Enter your age in years e.g. 35"
+        },
+        {
+          "id": "gender-identity",
+          "prompt": "What is your gender identity?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Man",
+            "Woman",
+            "Non-binary",
+            "Two Spirit",
+            "Prefer not to answer"
+          ]
+        },
+        {
+          "id": "education-level",
+          "prompt": "What is the highest level of education you have attained?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "High school or equivalent",
+            "Vocational/technical school (2 year)",
+            "Some university",
+            "University graduate (4 year)",
+            "Master's degree",
+            "Doctoral degree (PhD)",
+            "Professional degree (MD, JD, etc)",
+            "Other"
+          ]
+        },
+        {
+          "id": "education-other",
+          "prompt": "If other, please specify:",
+          "required": false,
+          "type": "shortText",
+          "location": "aboveStimulus"
+        }
+      ]
+    },
+    "minivlat-intro": {
+      "type": "markdown",
+      "path": "my-study/assets/minivlat-intro.md",
+      "response": []
+    },
+    "icon-array-square": {
+      "description": "A 10x10 icon array",
+      "instruction": "What percentage of the icons are highlighted?",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "iconArraySquareAnswer",
+          "prompt": "Your estimate (0-100):",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "numerical",
+          "min": 0,
+          "max": 100
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "categories": [
+          {
+            "color": "black",
+            "count": 22
+          },
+          {
+            "color": "grey",
+            "count": 78
+          }
+        ]
+      }
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      "visualization-consent",
+      "demographics-personal",
+      "minivlat-intro",
+      "$mini-vlat.se.full",
+      "icon-array-square"
+    ]
+  }
+}
