@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.4.3/src/parser/GlobalConfigSchema.json",
   "configsList": [
+    "my-study",
     "tutorial",
     "tutorial-replication",
     "demo-html",
@@ -56,6 +57,9 @@
     "test-step-logic"
   ],
   "configs": {
+    "my-study": {
+      "path": "my-study/config.json"
+    },
     "tutorial": {
       "path": "tutorial/config.json"
     },
