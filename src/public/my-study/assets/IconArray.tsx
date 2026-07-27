@@ -1,11 +1,10 @@
 import React from 'react';
-import { PREFIX } from '../../../utils/Prefix';
 
 const IconGrey = () =>
-    <img src={`${PREFIX}my-study/assets/design-a-grey.svg`} alt="Icon Unaffected" width="48" height="48" />
+    <img src={`/my-study/assets/design-a-grey.svg`} alt="Icon Unaffected" width="48" height="48" />
 
 const IconBlack = () =>
-    <img src={`${PREFIX}my-study/assets/design-a-black.svg`} alt="Icon Affected" width="48" height="48" />
+    <img src={`/my-study/assets/design-a-black.svg`} alt="Icon Affected" width="48" height="48" />
 
 const color: { [key: string]: React.FC } = {
     grey: IconGrey,
