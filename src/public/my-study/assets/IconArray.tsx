@@ -1,22 +1,6 @@
 import React from 'react';
 import SAM from './SAM';
 
-const IconGrey = () =>
-    <img src={`/my-study/assets/square-grey.svg`} alt="Icon Grey" width="36" height="36" />
-
-const IconBlack = () =>
-    <img src={`/my-study/assets/square-black.svg`} alt="Icon Black" width="36" height="36" />
-
-const color: { [key: string]: React.FC } = {
-    grey: IconGrey,
-    black: IconBlack,
-};
-
-const renderIcon = (colorName: string, key: number) => {
-    const SelectedIcon = color[colorName] || color.grey;
-    return <SelectedIcon key={key} />;
-};
-
 export default function IconArray({ parameters, setAnswer }: { parameters: any; setAnswer: (answer: any) => void }) {
     const { foreground, background, gridColumns = 10, probabilityStatement, idPrefix = 'iconArray' } = parameters;
 
@@ -24,6 +8,16 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
         { color: 'black', count: foreground.count, label: foreground.label },
         { color: 'grey', count: background.count, label: background.label },
     ];
+
+    const renderIcon = (color: string, key: number) => (
+        <img
+            key={key}
+            src={`${import.meta.env.BASE_URL}my-study/assets/square-${color}.svg`}
+            alt={color}
+            width={36}
+            height={36}
+        />
+    );
 
     const renderedIcons: React.ReactNode[] = [];
 
@@ -106,7 +100,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                     For each question, select the figure that best represents how you felt.
                     <span style={{ color: 'red' }}> *</span>
                 </p>
-                <SAM onChange={handleSAMChange} imageBasePath="./assets/sam" />
+                <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
                 {hasStarted && !allAnswered && (
                     <p style={{ color: 'red', marginTop: '0.75rem', fontWeight: 400 }}>
                         Please answer all questions to continue.
