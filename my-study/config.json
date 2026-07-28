@@ -112,7 +112,7 @@
       "response": [
         {
           "id": "icon-array-A-valence",
-          "prompt": "Valence rating",
+          "prompt": "Valence rating A",
           "required": true,
           "location": "sidebar",
           "type": "reactive",
@@ -120,7 +120,7 @@
         },
         {
           "id": "icon-array-A-arousal",
-          "prompt": "Arousal rating",
+          "prompt": "Arousal rating A",
           "required": true,
           "location": "sidebar",
           "type": "reactive",
@@ -128,7 +128,7 @@
         },
         {
           "id": "icon-array-A-dominance",
-          "prompt": "Dominance rating",
+          "prompt": "Dominance rating A",
           "required": true,
           "location": "sidebar",
           "type": "reactive",
@@ -156,7 +156,7 @@
       "response": [
         {
           "id": "icon-array-B-valence",
-          "prompt": "Valence rating",
+          "prompt": "Valence rating B",
           "required": true,
           "location": "sidebar",
           "type": "reactive",
@@ -164,7 +164,7 @@
         },
         {
           "id": "icon-array-B-arousal",
-          "prompt": "Arousal rating",
+          "prompt": "Arousal rating B",
           "required": true,
           "location": "sidebar",
           "type": "reactive",
@@ -172,7 +172,7 @@
         },
         {
           "id": "icon-array-B-dominance",
-          "prompt": "Dominance rating",
+          "prompt": "Dominance rating B",
           "required": true,
           "location": "sidebar",
           "type": "reactive",
@@ -192,6 +192,182 @@
           "label": "People who survive"
         }
       }
+    },
+    "icon-array-C": {
+      "description": "Icon array for mortality and survival, scenario C.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-C-valence",
+          "prompt": "Valence rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-C-arousal",
+          "prompt": "Arousal rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-C-dominance",
+          "prompt": "Dominance rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-C",
+        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to survive over the next 5 years.",
+        "foreground": {
+          "count": 60,
+          "label": "People who survive"
+        },
+        "background": {
+          "count": 40,
+          "label": "People who die"
+        }
+      }
+    },
+    "icon-array-D": {
+      "description": "Icon array for mortality and survival, scenario D.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-D-valence",
+          "prompt": "Valence rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-D-arousal",
+          "prompt": "Arousal rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-D-dominance",
+          "prompt": "Dominance rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-D",
+        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to die over the next 5 years.",
+        "foreground": {
+          "count": 40,
+          "label": "People who die"
+        },
+        "background": {
+          "count": 60,
+          "label": "People who survive"
+        }
+      }
+    },
+    "icon-array-E": {
+      "description": "Icon array for mortality and survival, scenario E.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-E-valence",
+          "prompt": "Valence rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-E-arousal",
+          "prompt": "Arousal rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-E-dominance",
+          "prompt": "Dominance rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-E",
+        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to survive over the next 5 years.",
+        "foreground": {
+          "count": 25,
+          "label": "People who survive"
+        },
+        "background": {
+          "count": 75,
+          "label": "People who die"
+        }
+      }
+    },
+    "icon-array-F": {
+      "description": "Icon array for mortality and survival, scenario F.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-F-valence",
+          "prompt": "Valence rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-F-arousal",
+          "prompt": "Arousal rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-F-dominance",
+          "prompt": "Dominance rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-F",
+        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to die over the next 5 years.",
+        "foreground": {
+          "count": 75,
+          "label": "People who die"
+        },
+        "background": {
+          "count": 25,
+          "label": "People who survive"
+        }
+      }
     }
   },
   "sequence": {
@@ -203,7 +379,11 @@
       "minivlat-intro",
       "$mini-vlat.se.full",
       "icon-array-A",
-      "icon-array-B"
+      "icon-array-B",
+      "icon-array-C",
+      "icon-array-D",
+      "icon-array-E",
+      "icon-array-F"
     ]
   }
 }
