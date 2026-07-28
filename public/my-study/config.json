@@ -105,6 +105,11 @@
       "path": "my-study/assets/minivlat-intro.md",
       "response": []
     },
+    "icon-array-intro": {
+      "type": "markdown",
+      "path": "my-study/assets/icon-array-intro.md",
+      "response": []
+    },
     "icon-array-A": {
       "description": "Icon array for mortality and survival, scenario A.",
       "type": "react-component",
@@ -368,6 +373,270 @@
           "label": "People who survive"
         }
       }
+    },
+    "icon-array-G": {
+      "description": "Icon array for kidney disease progression, scenario G.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-G-valence",
+          "prompt": "Valence rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-G-arousal",
+          "prompt": "Arousal rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-G-dominance",
+          "prompt": "Dominance rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-G",
+        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to avoid severe kidney disease progression over 2 years while taking treatment.",
+        "foreground": {
+          "count": 25,
+          "label": "People who avoid severe kidney disease progression"
+        },
+        "background": {
+          "count": 75,
+          "label": "People who experience severe kidney disease progression"
+        }
+      }
+    },
+    "icon-array-H": {
+      "description": "Icon array for kidney disease progression, scenario H.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-H-valence",
+          "prompt": "Valence rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-H-arousal",
+          "prompt": "Arousal rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-H-dominance",
+          "prompt": "Dominance rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-H",
+        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to experience severe kidney disease progression over 2 years despite taking treatment.",
+        "foreground": {
+          "count": 75,
+          "label": "People who experience severe kidney disease progression"
+        },
+        "background": {
+          "count": 25,
+          "label": "People who avoid severe kidney disease progression"
+        }
+      }
+    },
+    "icon-array-I": {
+      "description": "Icon array for kidney disease progression, scenario I.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-I-valence",
+          "prompt": "Valence rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-I-arousal",
+          "prompt": "Arousal rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-I-dominance",
+          "prompt": "Dominance rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-I",
+        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to avoid severe kidney disease progression over 2 years while taking treatment.",
+        "foreground": {
+          "count": 60,
+          "label": "People who avoid severe kidney disease progression"
+        },
+        "background": {
+          "count": 40,
+          "label": "People who experience severe kidney disease progression"
+        }
+      }
+    },
+    "icon-array-J": {
+      "description": "Icon array for kidney disease progression, scenario J.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-J-valence",
+          "prompt": "Valence rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-J-arousal",
+          "prompt": "Arousal rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-J-dominance",
+          "prompt": "Dominance rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-J",
+        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to experience severe kidney disease progression over 2 years despite taking treatment.",
+        "foreground": {
+          "count": 40,
+          "label": "People who experience severe kidney disease progression"
+        },
+        "background": {
+          "count": 60,
+          "label": "People who avoid severe kidney disease progression"
+        }
+      }
+    },
+    "icon-array-K": {
+      "description": "Icon array for kidney disease progression, scenario K.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-K-valence",
+          "prompt": "Valence rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-K-arousal",
+          "prompt": "Arousal rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-K-dominance",
+          "prompt": "Dominance rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-K",
+        "probabilityStatement": "You have very little protein in your urine and no diabetes or cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to avoid severe kidney disease progression over 2 years while taking treatment.",
+        "foreground": {
+          "count": 95,
+          "label": "People who experience severe kidney disease progression"
+        },
+        "background": {
+          "count": 5,
+          "label": "People who avoid severe kidney disease progression"
+        }
+      }
+    },
+    "icon-array-L": {
+      "description": "Icon array for kidney disease progression, scenario L.",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-L-valence",
+          "prompt": "Valence rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-L-arousal",
+          "prompt": "Arousal rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-L-dominance",
+          "prompt": "Dominance rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-L",
+        "probabilityStatement": "You have very little protein in your urine and no diabetes or cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to experience severe kidney disease progression over 2 years despite taking treatment.",
+        "foreground": {
+          "count": 5,
+          "label": "People who experience severe kidney disease progression"
+        },
+        "background": {
+          "count": 95,
+          "label": "People who avoid severe kidney disease progression"
+        }
+      }
     }
   },
   "sequence": {
@@ -378,12 +647,25 @@
       "demographics-personal",
       "minivlat-intro",
       "$mini-vlat.se.full",
-      "icon-array-A",
-      "icon-array-B",
-      "icon-array-C",
-      "icon-array-D",
-      "icon-array-E",
-      "icon-array-F"
+      "icon-array-intro",
+      {
+        "id": "icon-arrays",
+        "order": "latinSquare",
+        "components": [
+          "icon-array-A",
+          "icon-array-B",
+          "icon-array-C",
+          "icon-array-D",
+          "icon-array-E",
+          "icon-array-F",
+          "icon-array-G",
+          "icon-array-H",
+          "icon-array-I",
+          "icon-array-J",
+          "icon-array-K",
+          "icon-array-L"
+        ]
+      }
     ]
   }
 }

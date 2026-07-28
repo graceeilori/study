@@ -77,7 +77,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                     display: 'flex',
                     gap: '24px',
                     justifyContent: 'center',
-                    maxWidth: '480px',
+                    maxWidth: '840px',
                     margin: '12px auto 0',
                     fontSize: '0.9rem',
                 }}
@@ -85,7 +85,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                 {categories.map((cat) => (
                     <div key={cat.color} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '12px' }}>
                         <img
-                            src={`/my-study/assets/square-${cat.color}.svg`}
+                            src={`${import.meta.env.BASE_URL}my-study/assets/square-${cat.color}.svg`}
                             alt={cat.color}
                             width={20}
                             height={20}
