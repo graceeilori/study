@@ -143,14 +143,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-A",
-        "probabilityStatement": "You have very little protein in your urine and no diabetes or cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to survive over the next 5 years.",
+        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
         "foreground": {
           "count": 95,
-          "label": "People who survive"
+          "label": "People who are alive"
         },
         "background": {
           "count": 5,
-          "label": "People who die"
+          "label": "People who died"
         }
       }
     },
@@ -187,14 +187,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-B",
-        "probabilityStatement": "You have very little protein in your urine and no diabetes or cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to die over the next 5 years.",
+        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
         "foreground": {
           "count": 5,
-          "label": "People who die"
+          "label": "People who died"
         },
         "background": {
           "count": 95,
-          "label": "People who survive"
+          "label": "People who are alive"
         }
       }
     },
@@ -231,14 +231,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-C",
-        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to survive over the next 5 years.",
+        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
         "foreground": {
           "count": 60,
-          "label": "People who survive"
+          "label": "People who are alive"
         },
         "background": {
           "count": 40,
-          "label": "People who die"
+          "label": "People who died"
         }
       }
     },
@@ -275,14 +275,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-D",
-        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to die over the next 5 years.",
+        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
         "foreground": {
           "count": 40,
-          "label": "People who die"
+          "label": "People who died"
         },
         "background": {
           "count": 60,
-          "label": "People who survive"
+          "label": "People who are alive"
         }
       }
     },
@@ -319,14 +319,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-E",
-        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to survive over the next 5 years.",
+        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
         "foreground": {
           "count": 25,
-          "label": "People who survive"
+          "label": "People who are alive"
         },
         "background": {
           "count": 75,
-          "label": "People who die"
+          "label": "People who died"
         }
       }
     },
@@ -363,14 +363,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-F",
-        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to die over the next 5 years.",
+        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
         "foreground": {
           "count": 75,
-          "label": "People who die"
+          "label": "People who died"
         },
         "background": {
           "count": 25,
-          "label": "People who survive"
+          "label": "People who are alive"
         }
       }
     },
@@ -407,14 +407,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-G",
-        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to avoid severe kidney disease progression over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
           "count": 25,
-          "label": "People who avoid severe kidney disease progression"
+          "label": "People who improved"
         },
         "background": {
           "count": 75,
-          "label": "People who experience severe kidney disease progression"
+          "label": "People who did not improve"
         }
       }
     },
@@ -451,14 +451,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-H",
-        "probabilityStatement": "You have a high level of protein in your urine, diabetes, and cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to experience severe kidney disease progression over 2 years despite taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 75,
-          "label": "People who experience severe kidney disease progression"
+          "label": "People who did not improve"
         },
         "background": {
           "count": 25,
-          "label": "People who avoid severe kidney disease progression"
+          "label": "People who improved"
         }
       }
     },
@@ -495,14 +495,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-I",
-        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to avoid severe kidney disease progression over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
           "count": 60,
-          "label": "People who avoid severe kidney disease progression"
+          "label": "People who improved"
         },
         "background": {
           "count": 40,
-          "label": "People who experience severe kidney disease progression"
+          "label": "People who did not improve"
         }
       }
     },
@@ -539,14 +539,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-J",
-        "probabilityStatement": "You have some protein in your urine and cardiovascular disease, but no diabetes. This visualization shows how many people with health characteristics similar to yours are expected to experience severe kidney disease progression over 2 years despite taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 40,
-          "label": "People who experience severe kidney disease progression"
+          "label": "People who did not improve"
         },
         "background": {
           "count": 60,
-          "label": "People who avoid severe kidney disease progression"
+          "label": "People who improved"
         }
       }
     },
@@ -583,14 +583,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-K",
-        "probabilityStatement": "You have very little protein in your urine and no diabetes or cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to avoid severe kidney disease progression over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
           "count": 95,
-          "label": "People who experience severe kidney disease progression"
+          "label": "People who did not improve"
         },
         "background": {
           "count": 5,
-          "label": "People who avoid severe kidney disease progression"
+          "label": "People who improved"
         }
       }
     },
@@ -627,14 +627,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-L",
-        "probabilityStatement": "You have very little protein in your urine and no diabetes or cardiovascular disease. This visualization shows how many people with health characteristics similar to yours are expected to experience severe kidney disease progression over 2 years despite taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 5,
-          "label": "People who experience severe kidney disease progression"
+          "label": "People who did not improve"
         },
         "background": {
           "count": 95,
-          "label": "People who avoid severe kidney disease progression"
+          "label": "People who improved"
         }
       }
     }
