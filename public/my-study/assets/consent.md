@@ -12,7 +12,7 @@ Understanding Kidney Failure and Mortality Risk Visualizations in Chronic Kidney
 
 ---
 
-This consent form, a copy of which has been given to you, is only part of the process of informed consent. If you want more details about something mentioned here or information not included here, you should feel free to ask. Please take the time to read this carefully and to understand any accompanying information.
+This consent form is a part of the process of informed consent. If you want more details about something mentioned here or information not included here, you should feel free to ask. Please take the time to read this carefully and to understand any accompanying information.
 
 The University of Calgary Conjoint Faculties Research Ethics Board has approved this study (REB26-0922).
 
