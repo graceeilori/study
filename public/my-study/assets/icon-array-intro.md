@@ -1,5 +1,7 @@
 # Icon Arrays
 
+**Imagine you are a 60-year-old man with chronic kidney disease.**
+
 In this section, you will complete the main study task by reviewing visualizations of health information presented as icon arrays.
 
 You will see a series of icon array displays, each showing 100 people represented as individual icons, with some icons highlighted to represent a specific outcome (for example, how many people are expected to experience a particular health outcome out of the full group).
