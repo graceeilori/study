@@ -1,6 +1,6 @@
 # Icon Arrays
 
-**Imagine you are a 60-year-old man with chronic kidney disease.**
+**Imagine you have chronic kidney disease...**
 
 In this section, you will complete the main study task by reviewing visualizations of health information presented as icon arrays.
 
