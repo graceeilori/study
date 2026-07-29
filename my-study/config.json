@@ -407,13 +407,13 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-G",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
-          "count": 25,
+          "count": 5,
           "label": "People who improved"
         },
         "background": {
-          "count": 75,
+          "count": 95,
           "label": "People who did not improve"
         }
       }
@@ -451,13 +451,13 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-H",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
-          "count": 75,
+          "count": 95,
           "label": "People who did not improve"
         },
         "background": {
-          "count": 25,
+          "count": 5,
           "label": "People who improved"
         }
       }
@@ -497,11 +497,11 @@
         "idPrefix": "icon-array-I",
         "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
-          "count": 60,
+          "count": 40,
           "label": "People who improved"
         },
         "background": {
-          "count": 40,
+          "count": 60,
           "label": "People who did not improve"
         }
       }
@@ -541,11 +541,11 @@
         "idPrefix": "icon-array-J",
         "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
-          "count": 40,
+          "count": 60,
           "label": "People who did not improve"
         },
         "background": {
-          "count": 60,
+          "count": 40,
           "label": "People who improved"
         }
       }
@@ -583,14 +583,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-K",
-        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
-          "count": 95,
-          "label": "People who did not improve"
+          "count": 75,
+          "label": "People who improved"
         },
         "background": {
-          "count": 5,
-          "label": "People who improved"
+          "count": 25,
+          "label": "People who did not improve"
         }
       }
     },
@@ -627,13 +627,13 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-L",
-        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
-          "count": 5,
+          "count": 25,
           "label": "People who did not improve"
         },
         "background": {
-          "count": 95,
+          "count": 75,
           "label": "People who improved"
         }
       }
