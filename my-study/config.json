@@ -46,15 +46,13 @@
       "response": [
         {
           "id": "participant-signature",
-          "prompt": "By selecting ‘Yes’ and continuing to the survey, you indicate that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
+          "prompt": "By checking the box below, you confirm that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
           "location": "belowStimulus",
-          "type": "radio",
+          "type": "checkbox",
           "options": [
-            "Yes",
-            "No"
+            "I confirm that I have read and understood the information above and agree to participate in this study."
           ],
-          "required": true,
-          "requiredValue": "Yes"
+          "required": true
         }
       ]
     },
@@ -155,11 +153,11 @@
         "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
         "foreground": {
           "count": 95,
-          "label": "People who are alive"
+          "label": "people were alive"
         },
         "background": {
           "count": 5,
-          "label": "People who died"
+          "label": "people died"
         }
       }
     },
@@ -199,11 +197,11 @@
         "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
         "foreground": {
           "count": 5,
-          "label": "People who died"
+          "label": "people died"
         },
         "background": {
           "count": 95,
-          "label": "People who are alive"
+          "label": "people were alive"
         }
       }
     },
@@ -243,11 +241,11 @@
         "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
         "foreground": {
           "count": 60,
-          "label": "People who are alive"
+          "label": "people were alive"
         },
         "background": {
           "count": 40,
-          "label": "People who died"
+          "label": "people died"
         }
       }
     },
@@ -287,11 +285,11 @@
         "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
         "foreground": {
           "count": 40,
-          "label": "People who died"
+          "label": "people died"
         },
         "background": {
           "count": 60,
-          "label": "People who are alive"
+          "label": "people were alive"
         }
       }
     },
@@ -331,11 +329,11 @@
         "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
         "foreground": {
           "count": 25,
-          "label": "People who are alive"
+          "label": "people were alive"
         },
         "background": {
           "count": 75,
-          "label": "People who died"
+          "label": "people died"
         }
       }
     },
@@ -375,11 +373,11 @@
         "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
         "foreground": {
           "count": 75,
-          "label": "People who died"
+          "label": "people died"
         },
         "background": {
           "count": 25,
-          "label": "People who are alive"
+          "label": "people were alive"
         }
       }
     },
@@ -419,11 +417,11 @@
         "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
           "count": 5,
-          "label": "People who improved"
+          "label": "people improved with treatment"
         },
         "background": {
           "count": 95,
-          "label": "People who did not improve"
+          "label": "people did not improve with treatment"
         }
       }
     },
@@ -463,11 +461,11 @@
         "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 95,
-          "label": "People who did not improve"
+          "label": "people did not improve with treatment"
         },
         "background": {
           "count": 5,
-          "label": "People who improved"
+          "label": "people improved with treatment"
         }
       }
     },
@@ -507,11 +505,11 @@
         "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
           "count": 40,
-          "label": "People who improved"
+          "label": "people improved with treatment"
         },
         "background": {
           "count": 60,
-          "label": "People who did not improve"
+          "label": "people did not improve with treatment"
         }
       }
     },
@@ -551,11 +549,11 @@
         "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 60,
-          "label": "People who did not improve"
+          "label": "people did not improve with treatment"
         },
         "background": {
           "count": 40,
-          "label": "People who improved"
+          "label": "people improved with treatment"
         }
       }
     },
@@ -595,11 +593,11 @@
         "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
         "foreground": {
           "count": 75,
-          "label": "People who improved"
+          "label": "people improved with treatment"
         },
         "background": {
           "count": 25,
-          "label": "People who did not improve"
+          "label": "people did not improve with treatment"
         }
       }
     },
@@ -636,14 +634,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-L",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show <b>mild</b> changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 25,
-          "label": "People who did not improve"
+          "label": "people did not improve with treatment"
         },
         "background": {
           "count": 75,
-          "label": "People who improved"
+          "label": "people improved with treatment"
         }
       }
     }
