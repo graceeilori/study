@@ -14,8 +14,8 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
             key={key}
             src={`${import.meta.env.BASE_URL}my-study/assets/square-${color}.svg`}
             alt={color}
-            width={36}
-            height={36}
+            width={32}
+            height={32}
         />
     );
 
@@ -60,12 +60,12 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                         </p>
                     </div>
                 )}
-                <div style={{ width: `${gridColumns * 36 + (gridColumns - 1) * 6}px` }}>
+                <div style={{ width: `${gridColumns * 32 + (gridColumns - 1) * 4}px` }}>
                     <div
                         style={{
                             display: 'grid',
-                            gridTemplateColumns: `repeat(${gridColumns}, 36px)`,
-                            gap: '6px',
+                            gridTemplateColumns: `repeat(${gridColumns}, 32px)`,
+                            gap: '4px',
                             justifyContent: 'center',
                         }}
                     >
@@ -88,13 +88,14 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                             height={20}
                         />
                         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '6px' }}>
-                            <span style={{ fontSize: '1.4rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}%</span>
-                            <span style={{ fontSize: '0.95rem' }}>{foreground.label}</span>
+                            <span style={{ fontSize: '1.4rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}</span>
+                            <span style={{ fontSize: '1.2rem' }}>out of 100</span>
+                            <span style={{ fontSize: '1.2rem' }}>{foreground.label}</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style={{ marginTop: '40px', textAlign: 'left' }}>
+            <div style={{ marginTop: '16px', textAlign: 'left' }}>
                 <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
                 {hasStarted && !allAnswered && (
                     <p style={{ color: 'red', marginTop: '0.75rem', fontWeight: 400 }}>

@@ -221,6 +221,9 @@ export function useNextStep() {
         });
       }
 
+      // Scroll to top so the next step is visible from the start
+      window.scrollTo(0, 0);
+
       if (funcIndex) {
         navigate(`/${studyId}/${encryptIndex(currentStep)}/${encryptIndex(decryptIndex(funcIndex) + 1)}${window.location.search}`);
       } else {
