@@ -55,9 +55,10 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                 {probabilityStatement && (
                     <div style={{ flex: '0 1 280px', backgroundColor: '#FAFAFA', padding: '1px 16px', borderRadius: '8px' }}>
                         <h4 style={{ marginBottom: '2px', textAlign: 'left', lineHeight: 1.1 }}>Scenario</h4>
-                        <p style={{ marginBottom: '16px', fontSize: '1.2rem', lineHeight: 1.2 }}>
-                            {probabilityStatement}
-                        </p>
+                        <p
+                            style={{ marginBottom: '16px', fontSize: '1.2rem', lineHeight: 1.2 }}
+                            dangerouslySetInnerHTML={{ __html: probabilityStatement }}
+                        />
                     </div>
                 )}
                 <div style={{ width: `${gridColumns * 32 + (gridColumns - 1) * 4}px` }}>

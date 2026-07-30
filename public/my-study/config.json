@@ -634,7 +634,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-L",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
+        "probabilityStatement": "Your recent kidney tests show <b>mild</b> changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
         "foreground": {
           "count": 25,
           "label": "people did not improve with treatment"
