@@ -46,15 +46,13 @@
       "response": [
         {
           "id": "participant-signature",
-          "prompt": "By selecting ‘Yes’ and continuing to the survey, you indicate that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
+          "prompt": "By checking the box below, you confirm that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
           "location": "belowStimulus",
-          "type": "radio",
+          "type": "checkbox",
           "options": [
-            "Yes",
-            "No"
+            "I confirm that I have read and understood the information above and agree to participate in this study."
           ],
-          "required": true,
-          "requiredValue": "Yes"
+          "required": true
         }
       ]
     },
