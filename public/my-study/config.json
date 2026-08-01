@@ -23,14 +23,6 @@
     "sidebarWidth": 200,
     "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
   },
-  "studyRules": {
-    "devices": {
-      "allowed": [
-        "desktop"
-      ],
-      "blockedMessage": "Please use a desktop device for this study."
-    }
-  },
   "importedLibraries": [
     "mini-vlat"
   ],
