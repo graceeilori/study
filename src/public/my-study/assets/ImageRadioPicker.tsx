@@ -29,15 +29,15 @@ export default function ImageRadioPicker({ name, options, value, onChange }: Ima
               padding: '4px',
               border: isSelected ? '2px solid #1c7ed6' : '2px solid transparent',
               borderRadius: '6px',
-              background: isSelected ? '#e7f5ff' : 'transparent',
+              background: isSelected ? '#FFFFFB' : 'transparent',
               cursor: 'pointer',
             }}
           >
             <img
               src={opt.imageSrc}
               alt={opt.label ?? String(opt.value)}
-              width={80}
-              height={80}
+              width={67}
+              height={87}
               style={{ display: 'block' }}
             />
             <input
@@ -46,7 +46,7 @@ export default function ImageRadioPicker({ name, options, value, onChange }: Ima
               value={String(opt.value)}
               checked={isSelected}
               onChange={() => onChange(opt.value)}
-              style={{ cursor: 'pointer' }}
+              style={{ display: 'none' }}
             />
           </label>
         );

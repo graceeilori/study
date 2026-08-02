@@ -58,6 +58,50 @@
       "path": "my-study/assets/icon-array-intro.md",
       "response": []
     },
+    "icon-array-A": {
+      "description": "Positive Foreground, Negative Context, Low Negativity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "response": [
+        {
+          "id": "icon-array-A-valence",
+          "prompt": "Valence rating A",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-A-arousal",
+          "prompt": "Arousal rating A",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-A-dominance",
+          "prompt": "Dominance rating A",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-A",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.\n\nThis visualization shows the number of people with a health profile similar to yours who continued to live with the same health conditions for the next 5 years.",
+        "foreground": {
+          "count": 75,
+          "label": "people continued to live for the next 5 years"
+        },
+        "background": {
+          "count": 25,
+          "label": "people died within the next 5 years"
+        }
+      }
+    },
     "minivlat-intro": {
       "type": "markdown",
       "path": "my-study/assets/minivlat-intro.md",
@@ -124,6 +168,7 @@
       "introduction",
       "consent-form",
       "icon-array-intro",
+      "icon-array-A",
       "minivlat-intro",
       "$mini-vlat.sequences.full",
       "demographics-questionnaire"
