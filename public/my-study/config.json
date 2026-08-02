@@ -1,26 +1,27 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Basic Questionnaire Study",
-    "version": "pilot",
+    "title": "Evaluating Visualizations related to Chronic Kidney Disease",
+    "version": "1.0",
     "authors": [
-      "The reVISit Team",
-      "You :)"
+      "Grace Ilori"
     ],
-    "date": "2026-02-23",
-    "description": "A simple questionnaire study",
+    "date": "2026-07-06",
+    "description": "A study consisting of a demographic questionnaire, visualization literacy assessment, and visualization tasks.",
     "organizations": [
-      "University of Utah",
-      "WPI"
+      "Interactions Lab",
+      "University of Calgary"
     ]
   },
   "uiConfig": {
-    "contactEmail": "your@email.com",
+    "contactEmail": "grace.ilori@ucalgary.ca",
     "helpTextPath": "my-study/assets/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
-    "withSidebar": true
+    "withSidebar": true,
+    "sidebarWidth": 200,
+    "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
   },
   "components": {
     "introduction": {
