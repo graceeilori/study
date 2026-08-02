@@ -20,6 +20,7 @@
     "withProgressBar": true,
     "autoDownloadStudy": false,
     "withSidebar": true,
+    "sidebarWidth": 200,
     "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
   },
   "studyRules": {
@@ -55,6 +56,11 @@
     "icon-array-intro": {
       "type": "markdown",
       "path": "my-study/assets/icon-array-intro.md",
+      "response": []
+    },
+    "minivlat-intro": {
+      "type": "markdown",
+      "path": "my-study/assets/minivlat-intro.md",
       "response": []
     },
     "demographics-questionnaire": {
@@ -109,12 +115,17 @@
       ]
     }
   },
+  "importedLibraries": [
+    "mini-vlat"
+  ],
   "sequence": {
     "order": "fixed",
     "components": [
       "introduction",
       "consent-form",
       "icon-array-intro",
+      "minivlat-intro",
+      "$mini-vlat.sequences.full",
       "demographics-questionnaire"
     ]
   }
