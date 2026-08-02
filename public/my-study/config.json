@@ -20,8 +20,15 @@
     "withProgressBar": true,
     "autoDownloadStudy": false,
     "withSidebar": true,
-    "sidebarWidth": 200,
     "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
+  },
+  "studyRules": {
+    "devices": {
+      "allowed": [
+        "desktop"
+      ],
+      "blockedMessage": "This study requires a desktop device."
+    }
   },
   "components": {
     "introduction": {
@@ -29,44 +36,75 @@
       "path": "my-study/assets/introduction.md",
       "response": []
     },
-    "first-question-set": {
-      "type": "questionnaire",
+    "consent-form": {
+      "type": "markdown",
+      "path": "my-study/assets/consent.md",
       "response": [
         {
-          "id": "q1-name",
-          "prompt": "What is your first name?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "longText",
-          "placeholder": "Please enter your first name"
-        },
-        {
-          "id": "q2-color",
-          "prompt": "What is your favorite color?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "dropdown",
-          "placeholder": "Please choose your favorite color",
+          "id": "participant-signature",
+          "prompt": "By checking the box below, you confirm that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
+          "location": "belowStimulus",
+          "type": "checkbox",
           "options": [
-            "Red",
-            "Blue",
-            "My favorite color is not shown here."
-          ]
+            "I confirm that I have read and understood the information above and agree to participate in this study."
+          ],
+          "required": true
         }
       ]
     },
-    "second-question-set": {
+    "icon-array-intro": {
+      "type": "markdown",
+      "path": "my-study/assets/icon-array-intro.md",
+      "response": []
+    },
+    "demographics-questionnaire": {
       "type": "questionnaire",
       "response": [
         {
-          "id": "q3-satisfaction",
-          "prompt": "Rate your satisfaction with this survey from 1 (not enjoyable) to 5 (very enjoyable).",
+          "id": "age-group",
+          "prompt": "What is your age?",
           "required": true,
           "location": "aboveStimulus",
-          "type": "likert",
-          "leftLabel": "Not Enjoyable",
-          "rightLabel": "Very Enjoyable",
-          "numItems": 5
+          "type": "numerical",
+          "placeholder": "Enter your age in years e.g. 35"
+        },
+        {
+          "id": "gender-identity",
+          "prompt": "What is your gender identity?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Man",
+            "Woman",
+            "Non-binary",
+            "Two Spirit",
+            "Prefer not to answer"
+          ]
+        },
+        {
+          "id": "education-level",
+          "prompt": "What is the highest level of education you have attained?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "High school or equivalent",
+            "Vocational/technical school (2 year)",
+            "Some university",
+            "University graduate (4 year)",
+            "Master's degree",
+            "Doctoral degree (PhD)",
+            "Professional degree (MD, JD, etc)",
+            "Other"
+          ]
+        },
+        {
+          "id": "education-other",
+          "prompt": "If other, please specify:",
+          "required": false,
+          "type": "shortText",
+          "location": "aboveStimulus"
         }
       ]
     }
@@ -75,8 +113,9 @@
     "order": "fixed",
     "components": [
       "introduction",
-      "first-question-set",
-      "second-question-set"
+      "consent-form",
+      "icon-array-intro",
+      "demographics-questionnaire"
     ]
   }
 }
