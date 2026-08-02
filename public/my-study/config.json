@@ -1,670 +1,81 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Evaluating Visualizations related to Chronic Kidney Disease",
-    "version": "1.0",
+    "title": "Basic Questionnaire Study",
+    "version": "pilot",
     "authors": [
-      "Grace Ilori"
+      "The reVISit Team",
+      "You :)"
     ],
-    "date": "2026-07-06",
-    "description": "A study consisting of a demographic questionnaire, visualization literacy assessment, and visualization tasks.",
+    "date": "2026-02-23",
+    "description": "A simple questionnaire study",
     "organizations": [
-      "Interactions Lab",
-      "University of Calgary"
+      "University of Utah",
+      "WPI"
     ]
   },
   "uiConfig": {
-    "contactEmail": "grace.ilori@ucalgary.ca",
+    "contactEmail": "your@email.com",
     "helpTextPath": "my-study/assets/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
-    "withSidebar": true,
-    "sidebarWidth": 200,
-    "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
+    "withSidebar": true
   },
-  "importedLibraries": [
-    "mini-vlat"
-  ],
   "components": {
     "introduction": {
       "type": "markdown",
       "path": "my-study/assets/introduction.md",
       "response": []
     },
-    "visualization-consent": {
-      "type": "markdown",
-      "path": "my-study/assets/consent.md",
-      "response": [
-        {
-          "id": "participant-signature",
-          "prompt": "By checking the box below, you confirm that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
-          "location": "belowStimulus",
-          "type": "checkbox",
-          "options": [
-            "I confirm that I have read and understood the information above and agree to participate in this study."
-          ],
-          "required": true
-        }
-      ]
-    },
-    "demographics-personal": {
+    "first-question-set": {
       "type": "questionnaire",
       "response": [
         {
-          "id": "age-group",
-          "prompt": "What is your age?",
+          "id": "q1-name",
+          "prompt": "What is your first name?",
           "required": true,
           "location": "aboveStimulus",
-          "type": "numerical",
-          "placeholder": "Enter your age in years e.g. 35"
+          "type": "longText",
+          "placeholder": "Please enter your first name"
         },
         {
-          "id": "gender-identity",
-          "prompt": "What is your gender identity?",
+          "id": "q2-color",
+          "prompt": "What is your favorite color?",
           "required": true,
           "location": "aboveStimulus",
-          "type": "radio",
+          "type": "dropdown",
+          "placeholder": "Please choose your favorite color",
           "options": [
-            "Man",
-            "Woman",
-            "Non-binary",
-            "Two Spirit",
-            "Prefer not to answer"
+            "Red",
+            "Blue",
+            "My favorite color is not shown here."
           ]
-        },
-        {
-          "id": "education-level",
-          "prompt": "What is the highest level of education you have attained?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "High school or equivalent",
-            "Vocational/technical school (2 year)",
-            "Some university",
-            "University graduate (4 year)",
-            "Master's degree",
-            "Doctoral degree (PhD)",
-            "Professional degree (MD, JD, etc)",
-            "Other"
-          ]
-        },
-        {
-          "id": "education-other",
-          "prompt": "If other, please specify:",
-          "required": false,
-          "type": "shortText",
-          "location": "aboveStimulus"
         }
       ]
     },
-    "minivlat-intro": {
-      "type": "markdown",
-      "path": "my-study/assets/minivlat-intro.md",
-      "response": []
-    },
-    "icon-array-intro": {
-      "type": "markdown",
-      "path": "my-study/assets/icon-array-intro.md",
-      "response": []
-    },
-    "icon-array-A": {
-      "description": "Icon array for mortality and survival, scenario A.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
+    "second-question-set": {
+      "type": "questionnaire",
       "response": [
         {
-          "id": "icon-array-A-valence",
-          "prompt": "Valence rating A",
+          "id": "q3-satisfaction",
+          "prompt": "Rate your satisfaction with this survey from 1 (not enjoyable) to 5 (very enjoyable).",
           "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-A-arousal",
-          "prompt": "Arousal rating A",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-A-dominance",
-          "prompt": "Dominance rating A",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
+          "location": "aboveStimulus",
+          "type": "likert",
+          "leftLabel": "Not Enjoyable",
+          "rightLabel": "Very Enjoyable",
+          "numItems": 5
         }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-A",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
-        "foreground": {
-          "count": 95,
-          "label": "people were alive"
-        },
-        "background": {
-          "count": 5,
-          "label": "people died"
-        }
-      }
-    },
-    "icon-array-B": {
-      "description": "Icon array for mortality and survival, scenario B.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-B-valence",
-          "prompt": "Valence rating B",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-B-arousal",
-          "prompt": "Arousal rating B",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-B-dominance",
-          "prompt": "Dominance rating B",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-B",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
-        "foreground": {
-          "count": 5,
-          "label": "people died"
-        },
-        "background": {
-          "count": 95,
-          "label": "people were alive"
-        }
-      }
-    },
-    "icon-array-C": {
-      "description": "Icon array for mortality and survival, scenario C.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-C-valence",
-          "prompt": "Valence rating C",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-C-arousal",
-          "prompt": "Arousal rating C",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-C-dominance",
-          "prompt": "Dominance rating C",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-C",
-        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
-        "foreground": {
-          "count": 60,
-          "label": "people were alive"
-        },
-        "background": {
-          "count": 40,
-          "label": "people died"
-        }
-      }
-    },
-    "icon-array-D": {
-      "description": "Icon array for mortality and survival, scenario D.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-D-valence",
-          "prompt": "Valence rating D",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-D-arousal",
-          "prompt": "Arousal rating D",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-D-dominance",
-          "prompt": "Dominance rating D",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-D",
-        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
-        "foreground": {
-          "count": 40,
-          "label": "people died"
-        },
-        "background": {
-          "count": 60,
-          "label": "people were alive"
-        }
-      }
-    },
-    "icon-array-E": {
-      "description": "Icon array for mortality and survival, scenario E.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-E-valence",
-          "prompt": "Valence rating E",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-E-arousal",
-          "prompt": "Arousal rating E",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-E-dominance",
-          "prompt": "Dominance rating E",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-E",
-        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours were alive after 5 years.",
-        "foreground": {
-          "count": 25,
-          "label": "people were alive"
-        },
-        "background": {
-          "count": 75,
-          "label": "people died"
-        }
-      }
-    },
-    "icon-array-F": {
-      "description": "Icon array for mortality and survival, scenario F.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-F-valence",
-          "prompt": "Valence rating F",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-F-arousal",
-          "prompt": "Arousal rating F",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-F-dominance",
-          "prompt": "Dominance rating F",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-F",
-        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours died during the 5-year period.",
-        "foreground": {
-          "count": 75,
-          "label": "people died"
-        },
-        "background": {
-          "count": 25,
-          "label": "people were alive"
-        }
-      }
-    },
-    "icon-array-G": {
-      "description": "Icon array for kidney disease progression, scenario G.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-G-valence",
-          "prompt": "Valence rating G",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-G-arousal",
-          "prompt": "Arousal rating G",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-G-dominance",
-          "prompt": "Dominance rating G",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-G",
-        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
-        "foreground": {
-          "count": 5,
-          "label": "people improved with treatment"
-        },
-        "background": {
-          "count": 95,
-          "label": "people did not improve with treatment"
-        }
-      }
-    },
-    "icon-array-H": {
-      "description": "Icon array for kidney disease progression, scenario H.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-H-valence",
-          "prompt": "Valence rating H",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-H-arousal",
-          "prompt": "Arousal rating H",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-H-dominance",
-          "prompt": "Dominance rating H",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-H",
-        "probabilityStatement": "Your recent kidney tests show more noticeable changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
-        "foreground": {
-          "count": 95,
-          "label": "people did not improve with treatment"
-        },
-        "background": {
-          "count": 5,
-          "label": "people improved with treatment"
-        }
-      }
-    },
-    "icon-array-I": {
-      "description": "Icon array for kidney disease progression, scenario I.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-I-valence",
-          "prompt": "Valence rating I",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-I-arousal",
-          "prompt": "Arousal rating I",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-I-dominance",
-          "prompt": "Dominance rating I",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-I",
-        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
-        "foreground": {
-          "count": 40,
-          "label": "people improved with treatment"
-        },
-        "background": {
-          "count": 60,
-          "label": "people did not improve with treatment"
-        }
-      }
-    },
-    "icon-array-J": {
-      "description": "Icon array for kidney disease progression, scenario J.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-J-valence",
-          "prompt": "Valence rating J",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-J-arousal",
-          "prompt": "Arousal rating J",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-J-dominance",
-          "prompt": "Dominance rating J",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-J",
-        "probabilityStatement": "Your recent kidney tests show moderate changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
-        "foreground": {
-          "count": 60,
-          "label": "people did not improve with treatment"
-        },
-        "background": {
-          "count": 40,
-          "label": "people improved with treatment"
-        }
-      }
-    },
-    "icon-array-K": {
-      "description": "Icon array for kidney disease progression, scenario K.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-K-valence",
-          "prompt": "Valence rating K",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-K-arousal",
-          "prompt": "Arousal rating K",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-K-dominance",
-          "prompt": "Dominance rating K",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-K",
-        "probabilityStatement": "Your recent kidney tests show mild changes in kidney function. This visualization shows how many people with a health profile similar to yours improved over 2 years while taking treatment.",
-        "foreground": {
-          "count": 75,
-          "label": "people improved with treatment"
-        },
-        "background": {
-          "count": 25,
-          "label": "people did not improve with treatment"
-        }
-      }
-    },
-    "icon-array-L": {
-      "description": "Icon array for kidney disease progression, scenario L.",
-      "type": "react-component",
-      "path": "my-study/assets/IconArray.tsx",
-      "response": [
-        {
-          "id": "icon-array-L-valence",
-          "prompt": "Valence rating L",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-L-arousal",
-          "prompt": "Arousal rating L",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        },
-        {
-          "id": "icon-array-L-dominance",
-          "prompt": "Dominance rating L",
-          "required": true,
-          "location": "sidebar",
-          "type": "reactive",
-          "hidden": true
-        }
-      ],
-      "parameters": {
-        "totalIcons": 100,
-        "idPrefix": "icon-array-L",
-        "probabilityStatement": "Your recent kidney tests show <b>mild</b> changes in kidney function. This visualization shows how many people with a health profile similar to yours did not improve over 2 years while taking treatment.",
-        "foreground": {
-          "count": 25,
-          "label": "people did not improve with treatment"
-        },
-        "background": {
-          "count": 75,
-          "label": "people improved with treatment"
-        }
-      }
+      ]
     }
   },
   "sequence": {
     "order": "fixed",
     "components": [
       "introduction",
-      "visualization-consent",
-      "demographics-personal",
-      "minivlat-intro",
-      "$mini-vlat.se.full",
-      "icon-array-intro",
-      {
-        "id": "icon-arrays",
-        "order": "latinSquare",
-        "components": [
-          "icon-array-A",
-          "icon-array-B",
-          "icon-array-C",
-          "icon-array-D",
-          "icon-array-E",
-          "icon-array-F",
-          "icon-array-G",
-          "icon-array-H",
-          "icon-array-I",
-          "icon-array-J",
-          "icon-array-K",
-          "icon-array-L"
-        ]
-      }
+      "first-question-set",
+      "second-question-set"
     ]
   }
 }
