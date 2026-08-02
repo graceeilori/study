@@ -4,7 +4,7 @@
 Grace Ilori, University Student - Department of Computer Science, grace.ilori@ucalgary.ca \
 Dr. Foroozan Daneshzand, Postdoctoral Fellow - Department of Computer Science, foroozan.daneshzand@ucalgary.ca
 
-**Supervisor:**
+**Supervisor:** \
 Fateme Rajabiyazdi, Assistant Professor - Department of Computer Science, fateme.rajabiyazdi@ucalgary.ca
 
 **Title of Project:**
