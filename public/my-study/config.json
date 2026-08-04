@@ -328,6 +328,276 @@
         }
       }
     },
+    "icon-array-G": {
+      "description": "Postive Foreground, Positive Context, Low Positivity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-G-valence",
+          "prompt": "Valence rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-G-arousal",
+          "prompt": "Arousal rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-G-dominance",
+          "prompt": "Dominance rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-G",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "foreground": {
+          "count": 25,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 75,
+          "label": "people did not get better"
+        }
+      }
+    },
+    "icon-array-H": {
+      "description": "Negative Foreground, Positive Context, Low Positivity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-H-valence",
+          "prompt": "Valence rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-H-arousal",
+          "prompt": "Arousal rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-H-dominance",
+          "prompt": "Dominance rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-H",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "foreground": {
+          "count": 75,
+          "label": "people did not get better"
+        },
+        "background": {
+          "count": 25,
+          "label": "people got better"
+        }
+      }
+    },
+    "icon-array-I": {
+      "description": "Positive Foreground, Positive Context, Medium Positivity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-I-valence",
+          "prompt": "Valence rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-I-arousal",
+          "prompt": "Arousal rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-I-dominance",
+          "prompt": "Dominance rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-I",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "foreground": {
+          "count": 50,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 50,
+          "label": "people did not get better"
+        }
+      }
+    },
+    "icon-array-J": {
+      "description": "Negative Foreground, Positive Context, Medium Positivity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-J-valence",
+          "prompt": "Valence rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-J-arousal",
+          "prompt": "Arousal rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-J-dominance",
+          "prompt": "Dominance rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-J",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "foreground": {
+          "count": 50,
+          "label": "people did not get better"
+        },
+        "background": {
+          "count": 50,
+          "label": "people got better"
+        }
+      }
+    },
+    "icon-array-K": {
+      "description": "Positive Foreground, Positive Context, High Positivity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-K-valence",
+          "prompt": "Valence rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-K-arousal",
+          "prompt": "Arousal rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-K-dominance",
+          "prompt": "Dominance rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-K",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "foreground": {
+          "count": 75,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 25,
+          "label": "people did not get better"
+        }
+      }
+    },
+    "icon-array-L": {
+      "description": "Negative Foreground, Positive Context, High Positivity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-L-valence",
+          "prompt": "Valence rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-L-arousal",
+          "prompt": "Arousal rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-L-dominance",
+          "prompt": "Dominance rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-L",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "foreground": {
+          "count": 25,
+          "label": "people did not get better"
+        },
+        "background": {
+          "count": 75,
+          "label": "people got better"
+        }
+      }
+    },
     "minivlat-intro": {
       "type": "markdown",
       "path": "my-study/assets/minivlat-intro.md",
@@ -400,6 +670,12 @@
       "icon-array-D",
       "icon-array-E",
       "icon-array-F",
+      "icon-array-G",
+      "icon-array-H",
+      "icon-array-I",
+      "icon-array-J",
+      "icon-array-K",
+      "icon-array-L",
       "minivlat-intro",
       "$mini-vlat.sequences.full",
       "demographics-questionnaire"
