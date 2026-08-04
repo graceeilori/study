@@ -37,10 +37,15 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginTop: '1rem' }}>
+      {/* Shared label style */}
       <div>
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
           How pleasant or unpleasant was your reaction to this visualization?
         </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
+          <span>unhappy</span>
+          <span>happy</span>
+        </div>
         <ImageRadioPicker
           name="valence"
           options={buildOptions('valence', imageBasePath)}
@@ -53,6 +58,10 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
           How calm or activated was your reaction to this visualization?
         </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
+          <span>calm</span>
+          <span>alert</span>
+        </div>
         <ImageRadioPicker
           name="arousal"
           options={buildOptions('arousal', imageBasePath)}
@@ -63,8 +72,12 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
 
       <div>
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
-          How much control did you feel in response to this visualization?
+          How much in control do you feel after seeing this visualization?
         </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
+          <span>little control</span>
+          <span>very much in control</span>
+        </div>
         <ImageRadioPicker
           name="dominance"
           options={buildOptions('dominance', imageBasePath)}

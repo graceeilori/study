@@ -50,53 +50,57 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
     };
 
     return (
-        <div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '32px', flexWrap: 'wrap' }}>
-                {probabilityStatement && (
-                    <div style={{ flex: '0 1 280px', backgroundColor: '#FAFAFA', padding: '1px 16px', borderRadius: '8px' }}>
-                        <h4 style={{ marginBottom: '2px', textAlign: 'left', lineHeight: 1.1 }}>Scenario</h4>
-                        <p
-                            style={{ marginBottom: '16px', fontSize: '1.2rem', lineHeight: 1.2 }}
-                            dangerouslySetInnerHTML={{ __html: probabilityStatement }}
-                        />
-                    </div>
-                )}
-                <div style={{ width: `${gridColumns * 32 + (gridColumns - 1) * 4}px` }}>
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: `repeat(${gridColumns}, 32px)`,
-                            gap: '4px',
-                            justifyContent: 'center',
-                        }}
-                    >
-                        {renderedIcons}
-                    </div>
-                    <div
-                        style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '8px',
-                            marginTop: '12px',
-                            whiteSpace: 'nowrap',
-                        }}
-                    >
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', gap: '32px', flexWrap: 'wrap' }}>
+            {/* Column 1: Scenario */}
+            {probabilityStatement && (
+                <div style={{ flex: '0 0 280px', backgroundColor: '#FAFAFA', padding: '1px 16px', borderRadius: '8px' }}>
+                    <h3 style={{ marginBottom: '0px', textAlign: 'left', lineHeight: 1.5 }}>Scenario</h3>
+                    <p
+                        style={{ marginTop: '4px', marginBottom: '16px', fontSize: '1.2rem', lineHeight: 1.5 }}
+                        dangerouslySetInnerHTML={{ __html: probabilityStatement }}
+                    />
+                </div>
+            )}
+
+            {/* Column 2: Visualization */}
+            <div style={{ width: `${gridColumns * 32 + (gridColumns - 1) * 4}px`, paddingTop: '16px' }}>
+                <div
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: `repeat(${gridColumns}, 32px)`,
+                        gap: '4px',
+                        justifyContent: 'center',
+                    }}
+                >
+                    {renderedIcons}
+                </div>
+                {/* Icon Array Legend */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginTop: '12px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
                         <img
                             src={`${import.meta.env.BASE_URL}my-study/assets/square-blue.svg`}
                             alt="foreground"
                             width={20}
                             height={20}
                         />
-                        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '6px' }}>
-                            <span style={{ fontSize: '1.4rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}</span>
-                            <span style={{ fontSize: '1.2rem' }}>out of 100</span>
-                            <span style={{ fontSize: '1.2rem' }}>{foreground.label}</span>
-                        </div>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}</span>
+                        <span style={{ fontSize: '1.2rem' }}>out of 100 {foreground.label}</span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
+                        <img
+                            src={`${import.meta.env.BASE_URL}my-study/assets/square-grey.svg`}
+                            alt="background"
+                            width={20}
+                            height={20}
+                        />
+                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#8C8C8C' }}>{background.count}</span>
+                        <span style={{ fontSize: '1.2rem' }}>out of 100 {background.label}</span>
                     </div>
                 </div>
             </div>
-            <div style={{ marginTop: '16px', textAlign: 'left' }}>
+
+            {/* Column 3: SAM */}
+            <div style={{ flex: '0 1 auto', textAlign: 'left' }}>
                 <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
                 {hasStarted && !allAnswered && (
                     <p style={{ color: 'red', marginTop: '0.75rem', fontWeight: 400 }}>

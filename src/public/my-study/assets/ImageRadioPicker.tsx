@@ -15,7 +15,7 @@ interface ImageRadioPickerProps {
 
 export default function ImageRadioPicker({ name, options, value, onChange }: ImageRadioPickerProps) {
   return (
-    <div style={{ display: 'flex', gap: '4px' }} role="radiogroup" aria-label={name}>
+    <div style={{ display: 'flex', gap: '8px' }} role="radiogroup" aria-label={name}>
       {options.map((opt) => {
         const isSelected = value === opt.value;
         return (
@@ -27,7 +27,7 @@ export default function ImageRadioPicker({ name, options, value, onChange }: Ima
               alignItems: 'center',
               gap: '4px',
               padding: '4px',
-              border: isSelected ? '2px solid #1c7ed6' : '2px solid transparent',
+              border: isSelected ? '2.2px solid #1c7ed6' : '2px solid transparent',
               borderRadius: '6px',
               background: isSelected ? '#FFFFFB' : 'transparent',
               cursor: 'pointer',
@@ -36,8 +36,8 @@ export default function ImageRadioPicker({ name, options, value, onChange }: Ima
             <img
               src={opt.imageSrc}
               alt={opt.label ?? String(opt.value)}
-              width={67}
-              height={87}
+              width={75}
+              height={97}
               style={{ display: 'block' }}
             />
             <input
