@@ -12,20 +12,20 @@ This study aims to understand how people respond emotionally to different visual
 
 Your participation will include three parts:
 
-### **Part 1: Demographic Questionnaire**
+### **Part 1: Data Visualization Survey**
+
+In the main part of the study, you will be presented with different scenarios and visualizations related to chronic kidney disease risk. You will be asked to answer questions about your emotional responses to these visualizations. You will also be asked about your understanding of the risk information presented.
+
+### **Part 2: Visualization Literacy Assessment**
+
+You will answer a set of questions about various types of data visualizations. This will help us understand visualization literacy and how people read and interpret visual information.
+
+### **Part 3: Demographic Questionnaire**
 
 We'll ask you about:
 
 * Basic demographic information (age and gender)  
 * Your educational background  
-
-### **Part 2: Visualization Literacy Assessment Test**
-
-You will answer a set of questions about various types of data visualizations. This will help us understand visualization literacy and how people read and interpret visual information.
-
-### **Part 3: Data Visualization Survey**
-
-In the main part of the study, you will be presented with different scenarios and visualizations related to chronic kidney disease risk. You will be asked to answer questions about your emotional responses to these visualizations. You will also be asked about your understanding of the risk information presented.
 
 ## **Time Required**
 
