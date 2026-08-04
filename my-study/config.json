@@ -20,7 +20,7 @@
     "withProgressBar": true,
     "autoDownloadStudy": false,
     "withSidebar": true,
-    "sidebarWidth": 200,
+    "sidebarWidth": 240,
     "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
   },
   "studyRules": {
@@ -62,6 +62,7 @@
       "description": "Positive Foreground, Negative Context, Low Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
       "response": [
         {
           "id": "icon-array-A-valence",
@@ -91,14 +92,14 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-A",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.\n\nThis visualization shows the number of people with a health profile similar to yours who continued to live with the same health conditions for the next 5 years.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 75,
-          "label": "people continued to live for the next 5 years"
+          "label": "people continued to live"
         },
         "background": {
           "count": 25,
-          "label": "people died within the next 5 years"
+          "label": "people died"
         }
       }
     },

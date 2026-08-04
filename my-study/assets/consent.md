@@ -60,7 +60,7 @@ All data received from this study will be kept for 5 years in a secure location.
 
 ## Signature
 
-By selecting ‘Yes’ and continuing to the survey, you indicate that you have read and understood the information above and agree to participate in this study.
+By checking the box below and continuing to the survey, you indicate that you have read and understood the information above and agree to participate in this study.
 
 In no way does this waive your legal rights nor release the investigators, sponsors, or involved institutions from their legal and professional responsibilities. You are free to withdraw from this research project at any time. You should feel free to ask for clarification or new information throughout your participation.
 
