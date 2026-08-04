@@ -40,7 +40,7 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
       {/* Shared label style */}
       <div>
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
-          How pleasant or unpleasant was your reaction to this visualization?
+          How unpleasant or pleasant was your reaction to this visualization?
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
           <span>unhappy</span>

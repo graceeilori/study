@@ -53,7 +53,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', gap: '32px', flexWrap: 'wrap' }}>
             {/* Column 1: Scenario */}
             {probabilityStatement && (
-                <div style={{ flex: '0 0 280px', backgroundColor: '#FAFAFA', padding: '1px 16px', borderRadius: '8px' }}>
+                <div style={{ flex: '0 0 280px', backgroundColor: '#FAFAFA', padding: '1px 16px', borderRadius: '8px', marginTop: '16px' }}>
                     <h3 style={{ marginBottom: '0px', textAlign: 'left', lineHeight: 1.5 }}>Scenario</h3>
                     <p
                         style={{ marginTop: '4px', marginBottom: '16px', fontSize: '1.2rem', lineHeight: 1.5 }}

@@ -103,6 +103,231 @@
         }
       }
     },
+    "icon-array-B": {
+      "description": "Negative Foreground, Negative Context, Low Negativity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-B-valence",
+          "prompt": "Valence rating B",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-B-arousal",
+          "prompt": "Arousal rating B",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-B-dominance",
+          "prompt": "Dominance rating B",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-B",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 25,
+          "label": "people died"
+        },
+        "background": {
+          "count": 75,
+          "label": "people continued to live"
+        }
+      }
+    },
+    "icon-array-C": {
+      "description": "Positive Foreground, Negative Context, Medium Negativity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-C-valence",
+          "prompt": "Valence rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-C-arousal",
+          "prompt": "Arousal rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-C-dominance",
+          "prompt": "Dominance rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-C",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 50,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 50,
+          "label": "people died"
+        }
+      }
+    },
+    "icon-array-D": {
+      "description": "Negative Foreground, Negative Context, Medium Negativity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-D-valence",
+          "prompt": "Valence rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-D-arousal",
+          "prompt": "Arousal rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-D-dominance",
+          "prompt": "Dominance rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-D",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 50,
+          "label": "people died"
+        },
+        "background": {
+          "count": 50,
+          "label": "people continued to live"
+        }
+      }
+    },
+    "icon-array-E": {
+      "description": "Positive Foreground, Negative Context, High Negativity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-E-valence",
+          "prompt": "Valence rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-E-arousal",
+          "prompt": "Arousal rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-E-dominance",
+          "prompt": "Dominance rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-E",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 25,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 75,
+          "label": "people died"
+        }
+      }
+    },
+    "icon-array-F": {
+      "description": "Negative Foreground, Negative Context, High Negativity",
+      "type": "react-component",
+      "path": "my-study/assets/IconArray.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "icon-array-F-valence",
+          "prompt": "Valence rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-F-arousal",
+          "prompt": "Arousal rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "icon-array-F-dominance",
+          "prompt": "Dominance rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "icon-array-F",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 75,
+          "label": "people died"
+        },
+        "background": {
+          "count": 25,
+          "label": "people continued to live"
+        }
+      }
+    },
     "minivlat-intro": {
       "type": "markdown",
       "path": "my-study/assets/minivlat-intro.md",
@@ -170,6 +395,11 @@
       "consent-form",
       "icon-array-intro",
       "icon-array-A",
+      "icon-array-B",
+      "icon-array-C",
+      "icon-array-D",
+      "icon-array-E",
+      "icon-array-F",
       "minivlat-intro",
       "$mini-vlat.sequences.full",
       "demographics-questionnaire"
