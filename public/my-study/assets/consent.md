@@ -85,4 +85,3 @@ fateme.rajabiyazdi@ucalgary.ca
 
 If you have any concerns about the way you've been treated as a participant, please contact the Research Ethics Analyst, Research Services Office, University of Calgary at 403.220.6289 or 403.220.8640; email cfreb@ucalgary.ca.
 
-A copy of this consent form has been given to you to keep for your records and reference. The investigator has kept a copy of the consent form.

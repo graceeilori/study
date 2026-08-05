@@ -1,47 +1,35 @@
-# **About This Study**
-
-## **Welcome**
+# **Introduction**
 
 Thank you for your interest in participating in this research study conducted at the University of Calgary.
 
-## **Study Purpose**
+## Study Purpose
 
-This study aims to understand how people respond emotionally to different visualizations displaying chronic kidney disease risk information, such as kidney failure and mortality.
+This study aims to understand how people respond emotionally to different visualizations displaying chronic kidney disease risk information.
 
-## **What This Study Involves**
+## What This Study Involves
 
 Your participation will include three parts:
 
-### **Part 1: Data Visualization Survey**
+### Part 1: Data Visualization Survey (12 charts)
 
-In the main part of the study, you will be presented with different scenarios and visualizations related to chronic kidney disease risk. You will be asked to answer questions about your emotional responses to these visualizations. You will also be asked about your understanding of the risk information presented.
+In the main part of the study, you will be presented with different scenarios and visualizations related to chronic kidney disease risk. 
+You will be asked to answer questions about your emotional responses to these visualizations. Answer the questions at your pace, there is no time limit for this section.
 
-### **Part 2: Visualization Literacy Assessment**
+### Part 2: Visualization Literacy Assessment (12 charts)
 
-You will answer a set of questions about various types of data visualizations. This will help us understand visualization literacy and how people read and interpret visual information.
+You will answer a set of questions about 12 different types of data visualizations. This will help us understand visualization literacy and how people read and interpret visual information.
 
-### **Part 3: Demographic Questionnaire**
+### Part 3: Demographic Questionnaire
 
-We'll ask you about:
+We'll ask basic demographic questions, your:
 
-* Basic demographic information (age and gender)  
-* Your educational background  
+- Age
+- Gender
+- Education level
 
-## **Time Required**
+## Time Required
 
 This study will take approximately **30 minutes** to complete.
 
-## **Your Rights as a Participant**
 
-* **Voluntary Participation:** Your participation is completely voluntary  
-* **Right to Withdraw:** You may withdraw at any time without giving a reason and without penalty  
-* **Right to Skip Questions:** You may skip any question you're uncomfortable answering  
-* **Confidentiality:** Your responses are confidential and will be kept secure
-
-## **What Happens Next**
-
-Click **Next** to proceed to the informed consent form and begin the study.  
----
-
-*This study has been reviewed and approved by the University of Calgary Research Ethics Board REB26-0922.*  
-Please click 'Next' to begin the demographic section.
+#### Click **Next** to proceed to the informed consent form and begin the study. 
