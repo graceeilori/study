@@ -100,7 +100,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
             </div>
 
             {/* Column 3: SAM */}
-            <div style={{ flex: '0 1 auto', textAlign: 'left' }}>
+            <div style={{ flex: '0 1 auto', textAlign: 'left', marginTop: '-5px' }}>
                 <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
                 {hasStarted && !allAnswered && (
                     <p style={{ color: 'red', marginTop: '0.75rem', fontWeight: 400 }}>

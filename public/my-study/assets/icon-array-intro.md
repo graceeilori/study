@@ -2,10 +2,6 @@
 
 **Imagine you have chronic kidney disease...**
 
-In this section, you will complete the main study task by reviewing visualizations of health information presented as icon arrays.
+You will review a series of charts presenting your health information. Each chart represents 100 people, with highlighted icons showing how many experienced a particular outcome. After each visualization, you will answer three questions.
 
-You will see a series of icon array displays, each showing 100 people represented as individual icons, with some icons highlighted to represent a specific outcome (for example, how many people are expected to experience a particular health outcome out of the full group).
-
-After reviewing each visualization, you will be asked questions about how clear you found the display and how it made you feel.
-
-Please take your time reviewing each icon array and provide your honest assessment. This section should take approximately 20 minutes.
+Please review each chart carefully and select the response that best reflects how you feel. There are no right or wrong answers. This section will take approximately 20 minutes.
