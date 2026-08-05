@@ -101,6 +101,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
 
             {/* Column 3: SAM */}
             <div style={{ flex: '0 1 auto', textAlign: 'left', marginTop: '-5px' }}>
+                <p style={{ fontSize: '1rem', fontWeight: 500 }}>For each question, please select the figure or circle between two figures that best represents how you feel.</p>
                 <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
                 {hasStarted && !allAnswered && (
                     <p style={{ color: 'red', marginTop: '0.75rem', fontWeight: 400 }}>
