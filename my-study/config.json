@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Evaluating Visualizations related to Chronic Kidney Disease",
+    "title": "Evaluating Risk Related Charts",
     "version": "1.0",
     "authors": [
       "Grace Ilori"
