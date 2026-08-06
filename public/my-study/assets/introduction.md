@@ -23,9 +23,9 @@ You will answer a set of questions about 12 different types of data visualizatio
 
 We'll ask basic demographic questions, your:
 
-- Age
-- Gender
-- Education level
+- age
+- gender
+- highest level of education
 
 ## Time Required
 

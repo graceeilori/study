@@ -362,7 +362,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-G",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatments.",
         "foreground": {
           "count": 25,
           "label": "people got better"
@@ -407,7 +407,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-H",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatments.",
         "foreground": {
           "count": 75,
           "label": "people did not get better"
@@ -452,7 +452,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-I",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatments.",
         "foreground": {
           "count": 50,
           "label": "people got better"
@@ -497,7 +497,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-J",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatments.",
         "foreground": {
           "count": 50,
           "label": "people did not get better"
@@ -542,7 +542,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-K",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatments.",
         "foreground": {
           "count": 75,
           "label": "people got better"
@@ -587,7 +587,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "icon-array-L",
-        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatment.",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization summarizes five-year outcomes among 100 people with a health profile similar to yours who received prescribed treatments.",
         "foreground": {
           "count": 25,
           "label": "people did not get better"
@@ -653,6 +653,18 @@
           "location": "aboveStimulus"
         }
       ]
+    },
+    "feedback": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "feedback",
+          "prompt": "Please provide any feedback or comments you may have about the study (optional)",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "longText"
+        }
+      ]
     }
   },
   "importedLibraries": [
@@ -684,7 +696,8 @@
       },
       "minivlat-intro",
       "$mini-vlat.sequences.full",
-      "demographics-questionnaire"
+      "demographics-questionnaire",
+      "feedback"
     ]
   }
 }

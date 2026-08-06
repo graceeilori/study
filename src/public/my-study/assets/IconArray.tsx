@@ -53,17 +53,20 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', gap: '32px', flexWrap: 'wrap' }}>
             {/* Column 1: Scenario */}
             {probabilityStatement && (
-                <div style={{ flex: '0 0 280px', height: '380px', backgroundColor: '#FAFAFA', padding: '1px 16px', borderRadius: '8px', marginTop: '16px' }}>
-                    <h3 style={{ marginBottom: '0px', textAlign: 'left', lineHeight: 1.5 }}>Scenario</h3>
-                    <p
-                        style={{ marginTop: '4px', marginBottom: '16px', fontSize: '1.2rem', lineHeight: 1.5 }}
-                        dangerouslySetInnerHTML={{ __html: probabilityStatement }}
-                    />
+                <div style={{ flex: '0 0 280px', paddingTop: '16px', height: '420px', display: 'flex', flexDirection: 'column' }}>
+                    <h3 style={{ marginBottom: '16px', textAlign: 'left', lineHeight: 1.5, marginTop: 0, paddingLeft: '16px' }}>Scenario</h3>
+                    <div style={{ backgroundColor: '#FAFAFA', padding: '16px', borderRadius: '8px', flexGrow: 1 }}>
+                        <p
+                            style={{ margin: 0, fontSize: '1.2rem', lineHeight: 1.5 }}
+                            dangerouslySetInnerHTML={{ __html: probabilityStatement }}
+                        />
+                    </div>
                 </div>
             )}
 
             {/* Column 2: Visualization */}
             <div style={{ width: `${gridColumns * 32 + (gridColumns - 1) * 4}px`, paddingTop: '16px' }}>
+                <h3 style={{ marginBottom: '16px', textAlign: 'left', lineHeight: 1.5, marginTop: 0 }}>Chart</h3>
                 <div
                     style={{
                         display: 'grid',
@@ -100,11 +103,12 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
             </div>
 
             {/* Column 3: SAM */}
-            <div style={{ flex: '0 1 auto', textAlign: 'left', marginTop: '-5px' }}>
-                <p style={{ fontSize: '1rem', fontWeight: 500 }}>For each question, please select the figure or circle between two figures that best represents how you feel.</p>
+            <div style={{ flex: '0 1 auto', textAlign: 'left', paddingTop: '16px' }}>
+                <h3 style={{ marginBottom: '8px', textAlign: 'left', lineHeight: 1.5, marginTop: 0 }}>Questions</h3>
+                <p style={{ fontSize: '1rem', fontWeight: 400, marginTop: 0, marginBottom: '8px' }}>For each question, please select the figure or circle between two figures that best represents how you feel.</p>
                 <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
                 {hasStarted && !allAnswered && (
-                    <p style={{ color: 'red', marginTop: '0.75rem', fontWeight: 400 }}>
+                    <p style={{ color: 'red', marginTop: '0.6rem', fontWeight: 400 }}>
                         Please answer all questions to continue.
                     </p>
                 )}
