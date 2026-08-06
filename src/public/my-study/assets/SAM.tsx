@@ -40,7 +40,7 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
       {/* Shared label style */}
       <div>
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
-          1. How unpleasant or pleasant do you feel after seeing this visualization?
+          1. How unpleasant or pleasant do you feel after seeing this chart?
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
           <span>unpleasant</span>
@@ -56,7 +56,7 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
 
       <div>
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
-          2. How calm or alert do you feel after seeing this visualization?
+          2. How calm or alert do you feel after seeing this chart?
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
           <span>calm</span>
@@ -72,7 +72,7 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
 
       <div>
         <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>
-          3. How much in control do you feel after seeing this visualization?
+          3. How much in control do you feel after seeing this chart?
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
           <span>little control</span>
