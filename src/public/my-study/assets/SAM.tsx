@@ -75,8 +75,8 @@ export default function SAM({ onChange, imageBasePath = '/my-study/assets/sam' }
           3. How much in control do you feel after seeing this chart?
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#555', fontWeight: 500, marginBottom: '2px', padding: '0 8px' }}>
-          <span>little control</span>
-          <span>very much in control</span>
+          <span>no control</span>
+          <span>in control</span>
         </div>
         <ImageRadioPicker
           name="dominance"
