@@ -696,6 +696,12 @@
             "Very likely"
           ]
         }
+      ],
+      "correctAnswer": [
+        {
+          "id": "attention-check-1",
+          "answer": "Very likely"
+        }
       ]
     },
     "attention-check-2": {
@@ -716,6 +722,12 @@
             "Agree",
             "Strongly agree"
           ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "attention-check-2",
+          "answer": "Agree"
         }
       ]
     }
