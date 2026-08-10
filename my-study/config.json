@@ -676,6 +676,48 @@
           "type": "longText"
         }
       ]
+    },
+    "attention-check-1": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "attention-check-1",
+          "prompt": "To show that you are paying attention, please select Very likely to this question.<br><br>How likely are you to continue carefully reviewing each visualization and answering the questions based on your immediate response?",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Very unlikely",
+            "Unlikely",
+            "Somewhat unlikely",
+            "Neither unlikely nor likely",
+            "Somewhat likely",
+            "Likely",
+            "Very likely"
+          ]
+        }
+      ]
+    },
+    "attention-check-2": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "attention-check-2",
+          "prompt": "To show that you are paying attention, please select Agree for this question.<br><br>I am reviewing each visualization carefully before answering the questions.",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Strongly disagree",
+            "Disagree",
+            "Somewhat disagree",
+            "Neutral",
+            "Somewhat agree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
     }
   },
   "importedLibraries": [
@@ -696,12 +738,14 @@
           "icon-array-D",
           "icon-array-K",
           "icon-array-G",
+          "attention-check-1",
           "icon-array-F",
           "icon-array-J",
           "icon-array-C",
           "icon-array-A",
           "icon-array-L",
           "icon-array-E",
+          "attention-check-2",
           "icon-array-B",
           "icon-array-I"
         ]
@@ -715,12 +759,14 @@
           "icon-array-J",
           "icon-array-C",
           "icon-array-E",
+          "attention-check-1",
           "icon-array-L",
           "icon-array-I",
           "icon-array-D",
           "icon-array-B",
           "icon-array-K",
           "icon-array-F",
+          "attention-check-2",
           "icon-array-H",
           "icon-array-A"
         ]
@@ -734,12 +780,14 @@
           "icon-array-I",
           "icon-array-D",
           "icon-array-F",
+          "attention-check-1",
           "icon-array-K",
           "icon-array-A",
           "icon-array-J",
           "icon-array-H",
           "icon-array-C",
           "icon-array-L",
+          "attention-check-2",
           "icon-array-G",
           "icon-array-B"
         ]
@@ -753,12 +801,14 @@
           "icon-array-A",
           "icon-array-J",
           "icon-array-L",
+          "attention-check-1",
           "icon-array-C",
           "icon-array-B",
           "icon-array-I",
           "icon-array-G",
           "icon-array-D",
           "icon-array-K",
+          "attention-check-2",
           "icon-array-E",
           "icon-array-H"
         ]
@@ -772,12 +822,14 @@
           "icon-array-B",
           "icon-array-I",
           "icon-array-K",
+          "attention-check-1",
           "icon-array-D",
           "icon-array-H",
           "icon-array-A",
           "icon-array-E",
           "icon-array-J",
           "icon-array-C",
+          "attention-check-2",
           "icon-array-F",
           "icon-array-G"
         ]
@@ -791,12 +843,14 @@
           "icon-array-H",
           "icon-array-A",
           "icon-array-C",
+          "attention-check-1",
           "icon-array-J",
           "icon-array-G",
           "icon-array-B",
           "icon-array-F",
           "icon-array-I",
           "icon-array-D",
+          "attention-check-2",
           "icon-array-L",
           "icon-array-E"
         ]
@@ -810,12 +864,14 @@
           "icon-array-G",
           "icon-array-B",
           "icon-array-D",
+          "attention-check-1",
           "icon-array-I",
           "icon-array-E",
           "icon-array-H",
           "icon-array-L",
           "icon-array-A",
           "icon-array-J",
+          "attention-check-2",
           "icon-array-K",
           "icon-array-F"
         ]
@@ -829,12 +885,14 @@
           "icon-array-E",
           "icon-array-H",
           "icon-array-J",
+          "attention-check-1",
           "icon-array-A",
           "icon-array-F",
           "icon-array-G",
           "icon-array-K",
           "icon-array-B",
           "icon-array-I",
+          "attention-check-2",
           "icon-array-C",
           "icon-array-L"
         ]
@@ -848,12 +906,14 @@
           "icon-array-F",
           "icon-array-G",
           "icon-array-I",
+          "attention-check-1",
           "icon-array-B",
           "icon-array-L",
           "icon-array-E",
           "icon-array-C",
           "icon-array-H",
           "icon-array-A",
+          "attention-check-2",
           "icon-array-D",
           "icon-array-K"
         ]
@@ -867,12 +927,14 @@
           "icon-array-L",
           "icon-array-E",
           "icon-array-A",
+          "attention-check-1",
           "icon-array-H",
           "icon-array-K",
           "icon-array-F",
           "icon-array-D",
           "icon-array-G",
           "icon-array-B",
+          "attention-check-2",
           "icon-array-J",
           "icon-array-C"
         ]
@@ -886,12 +948,14 @@
           "icon-array-K",
           "icon-array-F",
           "icon-array-B",
+          "attention-check-1",
           "icon-array-G",
           "icon-array-C",
           "icon-array-L",
           "icon-array-J",
           "icon-array-E",
           "icon-array-H",
+          "attention-check-2",
           "icon-array-I",
           "icon-array-D"
         ]
@@ -905,12 +969,14 @@
           "icon-array-C",
           "icon-array-L",
           "icon-array-H",
+          "attention-check-1",
           "icon-array-E",
           "icon-array-D",
           "icon-array-K",
           "icon-array-I",
           "icon-array-F",
           "icon-array-G",
+          "attention-check-2",
           "icon-array-A",
           "icon-array-J"
         ]
