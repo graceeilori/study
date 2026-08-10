@@ -59,7 +59,7 @@
       "response": []
     },
     "icon-array-A": {
-      "description": "Positive Foreground, Negative Context, Low Negativity",
+      "description": "Positive Foreground, Mortality, Low Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -104,7 +104,7 @@
       }
     },
     "icon-array-B": {
-      "description": "Negative Foreground, Negative Context, Low Negativity",
+      "description": "Negative Foreground, Mortality, Low Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -149,7 +149,7 @@
       }
     },
     "icon-array-C": {
-      "description": "Positive Foreground, Negative Context, Medium Negativity",
+      "description": "Positive Foreground, Mortality, Medium Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -194,7 +194,7 @@
       }
     },
     "icon-array-D": {
-      "description": "Negative Foreground, Negative Context, Medium Negativity",
+      "description": "Negative Foreground, Mortality, Medium Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -239,7 +239,7 @@
       }
     },
     "icon-array-E": {
-      "description": "Positive Foreground, Negative Context, High Negativity",
+      "description": "Positive Foreground, Mortality, High Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -284,7 +284,7 @@
       }
     },
     "icon-array-F": {
-      "description": "Negative Foreground, Negative Context, High Negativity",
+      "description": "Negative Foreground, Mortality, High Negativity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -329,7 +329,7 @@
       }
     },
     "icon-array-G": {
-      "description": "Postive Foreground, Positive Context, Low Positivity",
+      "description": "Postive Foreground, Treatment, Low Positivity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -374,7 +374,7 @@
       }
     },
     "icon-array-H": {
-      "description": "Negative Foreground, Positive Context, Low Positivity",
+      "description": "Negative Foreground, Treatment, Low Positivity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -419,7 +419,7 @@
       }
     },
     "icon-array-I": {
-      "description": "Positive Foreground, Positive Context, Medium Positivity",
+      "description": "Positive Foreground, Treatment, Medium Positivity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -464,7 +464,7 @@
       }
     },
     "icon-array-J": {
-      "description": "Negative Foreground, Positive Context, Medium Positivity",
+      "description": "Negative Foreground, Treatment, Medium Positivity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -509,7 +509,7 @@
       }
     },
     "icon-array-K": {
-      "description": "Positive Foreground, Positive Context, High Positivity",
+      "description": "Positive Foreground, Treatment, High Positivity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -554,7 +554,7 @@
       }
     },
     "icon-array-L": {
-      "description": "Negative Foreground, Positive Context, High Positivity",
+      "description": "Negative Foreground, Treatment, High Positivity",
       "type": "react-component",
       "path": "my-study/assets/IconArray.tsx",
       "sidebarWidth": 0,
@@ -677,21 +677,231 @@
       "consent-form",
       "icon-array-intro",
       {
-        "id": "icon-arrays",
-        "order": "latinSquare",
+        "id": "order1",
+        "conditional": true,
+        "order": "fixed",
         "components": [
-          "icon-array-A",
-          "icon-array-B",
-          "icon-array-C",
-          "icon-array-D",
-          "icon-array-E",
-          "icon-array-F",
-          "icon-array-G",
           "icon-array-H",
+          "icon-array-D",
+          "icon-array-K",
+          "icon-array-G",
+          "icon-array-F",
+          "icon-array-J",
+          "icon-array-C",
+          "icon-array-A",
+          "icon-array-L",
+          "icon-array-E",
+          "icon-array-B",
+          "icon-array-I"
+        ]
+      },
+      {
+        "id": "order2",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-G",
+          "icon-array-J",
+          "icon-array-C",
+          "icon-array-E",
+          "icon-array-L",
           "icon-array-I",
+          "icon-array-D",
+          "icon-array-B",
+          "icon-array-K",
+          "icon-array-F",
+          "icon-array-H",
+          "icon-array-A"
+        ]
+      },
+      {
+        "id": "order3",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-E",
+          "icon-array-I",
+          "icon-array-D",
+          "icon-array-F",
+          "icon-array-K",
+          "icon-array-A",
+          "icon-array-J",
+          "icon-array-H",
+          "icon-array-C",
+          "icon-array-L",
+          "icon-array-G",
+          "icon-array-B"
+        ]
+      },
+      {
+        "id": "order4",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-F",
+          "icon-array-A",
+          "icon-array-J",
+          "icon-array-L",
+          "icon-array-C",
+          "icon-array-B",
+          "icon-array-I",
+          "icon-array-G",
+          "icon-array-D",
+          "icon-array-K",
+          "icon-array-E",
+          "icon-array-H"
+        ]
+      },
+      {
+        "id": "order5",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-L",
+          "icon-array-B",
+          "icon-array-I",
+          "icon-array-K",
+          "icon-array-D",
+          "icon-array-H",
+          "icon-array-A",
+          "icon-array-E",
+          "icon-array-J",
+          "icon-array-C",
+          "icon-array-F",
+          "icon-array-G"
+        ]
+      },
+      {
+        "id": "order6",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-K",
+          "icon-array-H",
+          "icon-array-A",
+          "icon-array-C",
+          "icon-array-J",
+          "icon-array-G",
+          "icon-array-B",
+          "icon-array-F",
+          "icon-array-I",
+          "icon-array-D",
+          "icon-array-L",
+          "icon-array-E"
+        ]
+      },
+      {
+        "id": "order7",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-C",
+          "icon-array-G",
+          "icon-array-B",
+          "icon-array-D",
+          "icon-array-I",
+          "icon-array-E",
+          "icon-array-H",
+          "icon-array-L",
+          "icon-array-A",
           "icon-array-J",
           "icon-array-K",
+          "icon-array-F"
+        ]
+      },
+      {
+        "id": "order8",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-D",
+          "icon-array-E",
+          "icon-array-H",
+          "icon-array-J",
+          "icon-array-A",
+          "icon-array-F",
+          "icon-array-G",
+          "icon-array-K",
+          "icon-array-B",
+          "icon-array-I",
+          "icon-array-C",
           "icon-array-L"
+        ]
+      },
+      {
+        "id": "order9",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-J",
+          "icon-array-F",
+          "icon-array-G",
+          "icon-array-I",
+          "icon-array-B",
+          "icon-array-L",
+          "icon-array-E",
+          "icon-array-C",
+          "icon-array-H",
+          "icon-array-A",
+          "icon-array-D",
+          "icon-array-K"
+        ]
+      },
+      {
+        "id": "order10",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-I",
+          "icon-array-L",
+          "icon-array-E",
+          "icon-array-A",
+          "icon-array-H",
+          "icon-array-K",
+          "icon-array-F",
+          "icon-array-D",
+          "icon-array-G",
+          "icon-array-B",
+          "icon-array-J",
+          "icon-array-C"
+        ]
+      },
+      {
+        "id": "order11",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-A",
+          "icon-array-K",
+          "icon-array-F",
+          "icon-array-B",
+          "icon-array-G",
+          "icon-array-C",
+          "icon-array-L",
+          "icon-array-J",
+          "icon-array-E",
+          "icon-array-H",
+          "icon-array-I",
+          "icon-array-D"
+        ]
+      },
+      {
+        "id": "order12",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "icon-array-B",
+          "icon-array-C",
+          "icon-array-L",
+          "icon-array-H",
+          "icon-array-E",
+          "icon-array-D",
+          "icon-array-K",
+          "icon-array-I",
+          "icon-array-F",
+          "icon-array-G",
+          "icon-array-A",
+          "icon-array-J"
         ]
       },
       "minivlat-intro",
