@@ -14,6 +14,7 @@
     ]
   },
   "uiConfig": {
+    "urlParticipantIdParam": "PROLIFIC_PID",
     "contactEmail": "grace.ilori@ucalgary.ca",
     "helpTextPath": "my-study/assets/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
@@ -21,7 +22,7 @@
     "autoDownloadStudy": false,
     "withSidebar": true,
     "sidebarWidth": 240,
-    "studyEndMsg": "# Thank you!\n\nYour responses have been saved. Add link to complete submission on Prolific"
+    "studyEndMsg": "Thank you for completing the study! Click here to [Return to Prolific](https://app.prolific.com/submissions/complete?cc=C1L8G15X)"
   },
   "studyRules": {
     "devices": {
@@ -35,7 +36,17 @@
     "introduction": {
       "type": "markdown",
       "path": "my-study/assets/introduction.md",
-      "response": []
+      "response": [
+        {
+          "id": "prolificId",
+          "prompt": "Please enter your Prolific ID",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Prolific ID",
+          "paramCapture": "PROLIFIC_PID"
+        }
+      ]
     },
     "consent-form": {
       "type": "markdown",
