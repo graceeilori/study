@@ -725,7 +725,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "attention-check-1",
-        "probabilityStatement": "This is an attention check.<br><br>For each question, please select figure 7 to confirm you are reading carefully.",
+        "probabilityStatement": "This is an attention check.<br><br>Please select a rating of 7 for each question to confirm you are reading carefully.",
         "foreground": {
           "count": 50,
           "label": "people continued to live"
@@ -787,7 +787,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "attention-check-2",
-        "probabilityStatement": "This is an attention check.<br><br>For each question, please select circle 2 to confirm you are reading carefully.",
+        "probabilityStatement": "This is an attention check.<br><br>Please select a rating of 2 for each question to confirm you are reading carefully.",
         "foreground": {
           "count": 50,
           "label": "people got better"

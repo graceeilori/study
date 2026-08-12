@@ -89,7 +89,7 @@ export default function AttentionCheckIconArray({ parameters, setAnswer }: { par
             {/* Column 3: Attention Check SAM */}
             <div style={{ flex: '0 1 auto', textAlign: 'left', paddingTop: '16px' }}>
                 <h3 style={{ marginBottom: '8px', textAlign: 'left', lineHeight: 1.5, marginTop: 0 }}>Questions</h3>
-                <p style={{ fontSize: '1rem', fontWeight: 400, marginTop: 0, marginBottom: '8px' }}>For each question, please select the figure or circle between two figures as specified for the attention check.</p>
+                <p style={{ fontSize: '1rem', fontWeight: 400, marginTop: 0, marginBottom: '8px' }}>For each question, please rate the chart with the number specified for the attention check.</p>
                 <AttentionCheckSAM
                     onChange={handleSAMChange}
                     imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`}
