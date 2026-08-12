@@ -678,58 +678,128 @@
       ]
     },
     "attention-check-1": {
-      "type": "questionnaire",
+      "description": "Attention Check 1 - SAM icon targets: valence 7, arousal 7, dominance 7",
+      "type": "react-component",
+      "path": "my-study/assets/AttentionCheckIconArray.tsx",
+      "sidebarWidth": 0,
       "response": [
         {
-          "id": "attention-check-1",
-          "prompt": "To show that you are paying attention, please select Very likely to this question.<br><br>How likely are you to continue carefully reviewing each visualization and answering the questions based on your immediate response?",
+          "id": "attention-check-1-valence",
+          "prompt": "Attention check valence",
           "required": false,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "Very unlikely",
-            "Unlikely",
-            "Somewhat unlikely",
-            "Neither unlikely nor likely",
-            "Somewhat likely",
-            "Likely",
-            "Very likely"
-          ]
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-1-arousal",
+          "prompt": "Attention check arousal",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-1-dominance",
+          "prompt": "Attention check dominance",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
         }
       ],
       "correctAnswer": [
         {
-          "id": "attention-check-1",
-          "answer": "Very likely"
+          "id": "attention-check-1-valence",
+          "answer": 7
+        },
+        {
+          "id": "attention-check-1-arousal",
+          "answer": 7
+        },
+        {
+          "id": "attention-check-1-dominance",
+          "answer": 7
         }
-      ]
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "attention-check-1",
+        "probabilityStatement": "This is an attention check.<br><br>For each question, please select figure 7 to confirm you are reading carefully.",
+        "foreground": {
+          "count": 50,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 50,
+          "label": "people died"
+        },
+        "valenceTarget": 7,
+        "arousalTarget": 7,
+        "dominanceTarget": 7
+      }
     },
     "attention-check-2": {
-      "type": "questionnaire",
+      "description": "Attention Check 2 - SAM icon targets: valence 2, arousal 2, dominance 2",
+      "type": "react-component",
+      "path": "my-study/assets/AttentionCheckIconArray.tsx",
+      "sidebarWidth": 0,
       "response": [
         {
-          "id": "attention-check-2",
-          "prompt": "To show that you are paying attention, please select Agree for this question.<br><br>I am reviewing each visualization carefully before answering the questions.",
+          "id": "attention-check-2-valence",
+          "prompt": "Attention check valence",
           "required": false,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "Strongly disagree",
-            "Disagree",
-            "Somewhat disagree",
-            "Neutral",
-            "Somewhat agree",
-            "Agree",
-            "Strongly agree"
-          ]
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-2-arousal",
+          "prompt": "Attention check arousal",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-2-dominance",
+          "prompt": "Attention check dominance",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
         }
       ],
       "correctAnswer": [
         {
-          "id": "attention-check-2",
-          "answer": "Agree"
+          "id": "attention-check-2-valence",
+          "answer": 2
+        },
+        {
+          "id": "attention-check-2-arousal",
+          "answer": 2
+        },
+        {
+          "id": "attention-check-2-dominance",
+          "answer": 2
         }
-      ]
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "attention-check-2",
+        "probabilityStatement": "This is an attention check.<br><br>For each question, please select figure 2 to confirm you are reading carefully.",
+        "foreground": {
+          "count": 50,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 50,
+          "label": "people did not get better"
+        },
+        "valenceTarget": 2,
+        "arousalTarget": 2,
+        "dominanceTarget": 2
+      }
     }
   },
   "importedLibraries": [
@@ -755,9 +825,9 @@
           "icon-array-J",
           "icon-array-C",
           "icon-array-A",
+          "attention-check-2",
           "icon-array-L",
           "icon-array-E",
-          "attention-check-2",
           "icon-array-B",
           "icon-array-I"
         ]
@@ -776,9 +846,9 @@
           "icon-array-I",
           "icon-array-D",
           "icon-array-B",
+          "attention-check-2",
           "icon-array-K",
           "icon-array-F",
-          "attention-check-2",
           "icon-array-H",
           "icon-array-A"
         ]
@@ -797,9 +867,9 @@
           "icon-array-A",
           "icon-array-J",
           "icon-array-H",
+          "attention-check-2",
           "icon-array-C",
           "icon-array-L",
-          "attention-check-2",
           "icon-array-G",
           "icon-array-B"
         ]
@@ -818,9 +888,9 @@
           "icon-array-B",
           "icon-array-I",
           "icon-array-G",
+          "attention-check-2",
           "icon-array-D",
           "icon-array-K",
-          "attention-check-2",
           "icon-array-E",
           "icon-array-H"
         ]
@@ -839,9 +909,9 @@
           "icon-array-H",
           "icon-array-A",
           "icon-array-E",
+          "attention-check-2",
           "icon-array-J",
           "icon-array-C",
-          "attention-check-2",
           "icon-array-F",
           "icon-array-G"
         ]
@@ -860,9 +930,9 @@
           "icon-array-G",
           "icon-array-B",
           "icon-array-F",
+          "attention-check-2",
           "icon-array-I",
           "icon-array-D",
-          "attention-check-2",
           "icon-array-L",
           "icon-array-E"
         ]
@@ -881,9 +951,9 @@
           "icon-array-E",
           "icon-array-H",
           "icon-array-L",
+          "attention-check-2",
           "icon-array-A",
           "icon-array-J",
-          "attention-check-2",
           "icon-array-K",
           "icon-array-F"
         ]
@@ -902,9 +972,9 @@
           "icon-array-F",
           "icon-array-G",
           "icon-array-K",
+          "attention-check-2",
           "icon-array-B",
           "icon-array-I",
-          "attention-check-2",
           "icon-array-C",
           "icon-array-L"
         ]
@@ -923,9 +993,9 @@
           "icon-array-L",
           "icon-array-E",
           "icon-array-C",
+          "attention-check-2",
           "icon-array-H",
           "icon-array-A",
-          "attention-check-2",
           "icon-array-D",
           "icon-array-K"
         ]
@@ -944,9 +1014,9 @@
           "icon-array-K",
           "icon-array-F",
           "icon-array-D",
+          "attention-check-2",
           "icon-array-G",
           "icon-array-B",
-          "attention-check-2",
           "icon-array-J",
           "icon-array-C"
         ]
@@ -965,9 +1035,9 @@
           "icon-array-C",
           "icon-array-L",
           "icon-array-J",
+          "attention-check-2",
           "icon-array-E",
           "icon-array-H",
-          "attention-check-2",
           "icon-array-I",
           "icon-array-D"
         ]
@@ -986,9 +1056,9 @@
           "icon-array-D",
           "icon-array-K",
           "icon-array-I",
+          "attention-check-2",
           "icon-array-F",
           "icon-array-G",
-          "attention-check-2",
           "icon-array-A",
           "icon-array-J"
         ]
