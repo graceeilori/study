@@ -787,7 +787,7 @@
       "parameters": {
         "totalIcons": 100,
         "idPrefix": "attention-check-2",
-        "probabilityStatement": "This is an attention check.<br><br>For each question, please select figure 2 to confirm you are reading carefully.",
+        "probabilityStatement": "This is an attention check.<br><br>For each question, please select circle 2 to confirm you are reading carefully.",
         "foreground": {
           "count": 50,
           "label": "people got better"
