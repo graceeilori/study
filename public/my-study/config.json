@@ -106,11 +106,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 75,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         },
         "background": {
           "count": 25,
-          "label": "people died"
+          "label": "People who died"
         }
       }
     },
@@ -151,11 +151,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 25,
-          "label": "people died"
+          "label": "People who died"
         },
         "background": {
           "count": 75,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         }
       }
     },
@@ -196,11 +196,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 50,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         },
         "background": {
           "count": 50,
-          "label": "people died"
+          "label": "People who died"
         }
       }
     },
@@ -241,11 +241,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 50,
-          "label": "people died"
+          "label": "People who died"
         },
         "background": {
           "count": 50,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         }
       }
     },
@@ -286,11 +286,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 25,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         },
         "background": {
           "count": 75,
-          "label": "people died"
+          "label": "People who died"
         }
       }
     },
@@ -331,11 +331,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
         "foreground": {
           "count": 75,
-          "label": "people died"
+          "label": "People who died"
         },
         "background": {
           "count": 25,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         }
       }
     },
@@ -376,11 +376,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
         "foreground": {
           "count": 25,
-          "label": "people got better"
+          "label": "People who got better"
         },
         "background": {
           "count": 75,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         }
       }
     },
@@ -421,11 +421,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
         "foreground": {
           "count": 75,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         },
         "background": {
           "count": 25,
-          "label": "people got better"
+          "label": "People who got better"
         }
       }
     },
@@ -466,11 +466,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
         "foreground": {
           "count": 50,
-          "label": "people got better"
+          "label": "People who got better"
         },
         "background": {
           "count": 50,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         }
       }
     },
@@ -511,11 +511,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
         "foreground": {
           "count": 50,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         },
         "background": {
           "count": 50,
-          "label": "people got better"
+          "label": "People who got better"
         }
       }
     },
@@ -556,11 +556,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
         "foreground": {
           "count": 75,
-          "label": "people got better"
+          "label": "People who got better"
         },
         "background": {
           "count": 25,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         }
       }
     },
@@ -601,11 +601,11 @@
         "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
         "foreground": {
           "count": 25,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         },
         "background": {
           "count": 75,
-          "label": "people got better"
+          "label": "People who got better"
         }
       }
     },
@@ -728,11 +728,11 @@
         "probabilityStatement": "This is an attention check.<br><br>Please select a rating of 7 for each question to confirm you are reading carefully.",
         "foreground": {
           "count": 50,
-          "label": "people continued to live"
+          "label": "People who continued to live"
         },
         "background": {
           "count": 50,
-          "label": "people died"
+          "label": "People who died"
         },
         "valenceTarget": 7,
         "arousalTarget": 7,
@@ -790,11 +790,11 @@
         "probabilityStatement": "This is an attention check.<br><br>Please select a rating of 2 for each question to confirm you are reading carefully.",
         "foreground": {
           "count": 50,
-          "label": "people got better"
+          "label": "People who got better"
         },
         "background": {
           "count": 50,
-          "label": "people did not get better"
+          "label": "People who did not get better"
         },
         "valenceTarget": 2,
         "arousalTarget": 2,
