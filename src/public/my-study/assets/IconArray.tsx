@@ -86,8 +86,8 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                             width={20}
                             height={20}
                         />
-                        {/* <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}</span> */}
-                        <span style={{ fontSize: '1.2rem' }}>{foreground.label}</span>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}</span>
+                        <span style={{ fontSize: '1.2rem' }}>out of 100 {foreground.label}</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
                         <img
@@ -96,8 +96,8 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                             width={20}
                             height={20}
                         />
-                        {/* <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#8C8C8C' }}>{background.count}</span> */}
-                        <span style={{ fontSize: '1.2rem' }}>{background.label}</span>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#8C8C8C' }}>{background.count}</span>
+                        <span style={{ fontSize: '1.2rem' }}>out of 100 {background.label}</span>
                     </div>
                 </div>
             </div>
