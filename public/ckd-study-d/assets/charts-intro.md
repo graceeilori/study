@@ -2,7 +2,7 @@
 
 You will review a series of charts presenting your health information.
 
-Each chart represents 100 people, with highlighted icons showing how many experienced a particular outcome. 
+In each chart, the highlighted slice shows the proportion of people who experienced a particular outcome.
 
 After each chart, you will answer three questions.
 

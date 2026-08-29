@@ -1,32 +1,10 @@
 import React from 'react';
 import SAM from './SAM';
 
-export default function IconArray({ parameters, setAnswer }: { parameters: any; setAnswer: (answer: any) => void }) {
-    const { foreground, background, gridColumns = 10, probabilityStatement, idPrefix = 'iconArray' } = parameters;
+export default function DonutChart({ parameters, setAnswer }: { parameters: any; setAnswer: (answer: any) => void }) {
+    const { foreground, background, gridColumns = 10, probabilityStatement, idPrefix = 'donutChart' } = parameters;
 
-    const categories = [
-        { color: 'blue', count: foreground.count, label: foreground.label },
-        { color: 'grey', count: background.count, label: background.label },
-    ];
-
-    const renderIcon = (color: string, key: number) => (
-        <img
-            key={key}
-            src={`${import.meta.env.BASE_URL}my-study/assets/square-${color}.svg`}
-            alt={color}
-            width={32}
-            height={32}
-        />
-    );
-
-    const renderedIcons: React.ReactNode[] = [];
-
-    categories.forEach((category) => {
-        for (let i = 0; i < category.count; i++) {
-            const uniqueKey = renderedIcons.length;
-            renderedIcons.push(renderIcon(category.color, uniqueKey));
-        }
-    });
+    const donutImageName = `donut-${foreground.count}.png`;
 
     const [hasStarted, setHasStarted] = React.useState(false);
     const [allAnswered, setAllAnswered] = React.useState(false);
@@ -69,35 +47,44 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
                 <h3 style={{ marginBottom: '16px', textAlign: 'left', lineHeight: 1.5, marginTop: 0 }}>Chart</h3>
                 <div
                     style={{
-                        display: 'grid',
-                        gridTemplateColumns: `repeat(${gridColumns}, 32px)`,
-                        gap: '4px',
+                        width: `${gridColumns * 32 + (gridColumns - 1) * 4}px`,
+                        height: `${gridColumns * 32 + (gridColumns - 1) * 4}px`,
+                        display: 'flex',
+                        alignItems: 'center',
                         justifyContent: 'center',
                     }}
                 >
-                    {renderedIcons}
+                    <img
+                        src={`${import.meta.env.BASE_URL}ckd-study-d/assets/${donutImageName}`}
+                        alt={`Donut chart ${donutImageName}`}
+                        style={{
+                            maxWidth: '100%',
+                            maxHeight: '100%',
+                            objectFit: 'contain',
+                        }}
+                    />
                 </div>
-                {/* Icon Array Legend */}
+                {/* Chart Legend */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginTop: '12px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
                         <img
-                            src={`${import.meta.env.BASE_URL}my-study/assets/square-blue.svg`}
+                            src={`${import.meta.env.BASE_URL}ckd-study-d/assets/square-blue.svg`}
                             alt="foreground"
                             width={20}
                             height={20}
                         />
-                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#0073AA' }}>{foreground.count}</span>
-                        <span style={{ fontSize: '1.2rem' }}>out of 100 {foreground.label}</span>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#306AC5' }}>{foreground?.count}</span>
+                        <span style={{ fontSize: '1.2rem' }}>out of 100 {foreground?.label}</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
                         <img
-                            src={`${import.meta.env.BASE_URL}my-study/assets/square-grey.svg`}
+                            src={`${import.meta.env.BASE_URL}ckd-study-d/assets/square-grey.svg`}
                             alt="background"
                             width={20}
                             height={20}
                         />
-                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#8C8C8C' }}>{background.count}</span>
-                        <span style={{ fontSize: '1.2rem' }}>out of 100 {background.label}</span>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#8C8C8C' }}>{background?.count}</span>
+                        <span style={{ fontSize: '1.2rem' }}>out of 100 {background?.label}</span>
                     </div>
                 </div>
             </div>
@@ -106,7 +93,7 @@ export default function IconArray({ parameters, setAnswer }: { parameters: any; 
             <div style={{ flex: '0 1 auto', textAlign: 'left', paddingTop: '16px' }}>
                 <h3 style={{ marginBottom: '8px', textAlign: 'left', lineHeight: 1.5, marginTop: 0 }}>Questions</h3>
                 <p style={{ fontSize: '1rem', fontWeight: 400, marginTop: 0, marginBottom: '8px' }}>For each question, please select the figure or circle between two figures that best represents how you feel.</p>
-                <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`} />
+                <SAM onChange={handleSAMChange} imageBasePath={`${import.meta.env.BASE_URL}ckd-study-d/assets/sam`} />
                 {hasStarted && !allAnswered && (
                     <p style={{ color: 'red', marginTop: '0.6rem', fontWeight: 400 }}>
                         Please answer all questions to continue.

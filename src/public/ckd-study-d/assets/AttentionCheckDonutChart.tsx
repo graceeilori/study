@@ -1,7 +1,7 @@
 import React from 'react';
 import AttentionCheckSAM from './AttentionCheckSAM';
 
-export default function AttentionCheckIconArray({ parameters, setAnswer }: { parameters: any; setAnswer: (answer: any) => void }) {
+export default function AttentionCheckDonutChart({ parameters, setAnswer }: { parameters: any; setAnswer: (answer: any) => void }) {
     const {
         foreground,
         background,
@@ -13,29 +13,7 @@ export default function AttentionCheckIconArray({ parameters, setAnswer }: { par
         dominanceTarget,
     } = parameters;
 
-    const categories = [
-        { color: 'blue', count: foreground.count, label: foreground.label },
-        { color: 'grey', count: background.count, label: background.label },
-    ];
-
-    const renderIcon = (color: string, key: number) => (
-        <img
-            key={key}
-            src={`${import.meta.env.BASE_URL}my-study/assets/square-${color}.svg`}
-            alt={color}
-            width={32}
-            height={32}
-        />
-    );
-
-    const renderedIcons: React.ReactNode[] = [];
-
-    categories.forEach((category) => {
-        for (let i = 0; i < category.count; i++) {
-            const uniqueKey = renderedIcons.length;
-            renderedIcons.push(renderIcon(category.color, uniqueKey));
-        }
-    });
+    const donutImageName = `donut-${foreground.count}.png`;
 
     const [hasStarted, setHasStarted] = React.useState(false);
     const [allAnswered, setAllAnswered] = React.useState(false);
@@ -76,13 +54,22 @@ export default function AttentionCheckIconArray({ parameters, setAnswer }: { par
                 <h3 style={{ marginBottom: '16px', textAlign: 'left', lineHeight: 1.5, marginTop: 0 }}>Chart</h3>
                 <div
                     style={{
-                        display: 'grid',
-                        gridTemplateColumns: `repeat(${gridColumns}, 32px)`,
-                        gap: '4px',
+                        width: `${gridColumns * 32 + (gridColumns - 1) * 4}px`,
+                        height: `${gridColumns * 32 + (gridColumns - 1) * 4}px`,
+                        display: 'flex',
+                        alignItems: 'center',
                         justifyContent: 'center',
                     }}
                 >
-                    {renderedIcons}
+                    <img
+                        src={`${import.meta.env.BASE_URL}ckd-study-d/assets/${donutImageName}`}
+                        alt={`Donut chart ${donutImageName}`}
+                        style={{
+                            maxWidth: '100%',
+                            maxHeight: '100%',
+                            objectFit: 'contain',
+                        }}
+                    />
                 </div>
             </div>
 
@@ -92,7 +79,7 @@ export default function AttentionCheckIconArray({ parameters, setAnswer }: { par
                 <p style={{ fontSize: '1rem', fontWeight: 400, marginTop: 0, marginBottom: '8px' }}>For each question, please rate the chart with the number specified for the attention check.</p>
                 <AttentionCheckSAM
                     onChange={handleSAMChange}
-                    imageBasePath={`${import.meta.env.BASE_URL}my-study/assets/sam`}
+                    imageBasePath={`${import.meta.env.BASE_URL}ckd-study-d/assets/sam`}
                     valenceTarget={valenceTarget}
                     arousalTarget={arousalTarget}
                     dominanceTarget={dominanceTarget}
