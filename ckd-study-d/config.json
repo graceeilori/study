@@ -1,0 +1,1072 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Evaluating Risk Related Charts",
+    "version": "1.0",
+    "authors": [
+      "Grace Ilori"
+    ],
+    "date": "2026-07-06",
+    "description": "A study consisting of a demographic questionnaire, visualization literacy assessment, and visualization tasks.",
+    "organizations": [
+      "Interactions Lab",
+      "University of Calgary"
+    ]
+  },
+  "uiConfig": {
+    "urlParticipantIdParam": "PROLIFIC_PID",
+    "contactEmail": "grace.ilori@ucalgary.ca",
+    "helpTextPath": "ckd-study-d/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "withSidebar": true,
+    "sidebarWidth": 240,
+    "studyEndMsg": "Thank you for completing the study! Click here to [Return to Prolific](https://app.prolific.com/submissions/complete?cc=C1L8G15X)"
+  },
+  "studyRules": {
+    "devices": {
+      "allowed": [
+        "desktop"
+      ],
+      "blockedMessage": "This study requires a desktop device."
+    }
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "ckd-study-d/assets/introduction.md",
+      "response": [
+        {
+          "id": "prolificId",
+          "prompt": "Please enter your Prolific ID",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Prolific ID",
+          "paramCapture": "PROLIFIC_PID"
+        }
+      ]
+    },
+    "consent-form": {
+      "type": "markdown",
+      "path": "ckd-study-d/assets/consent.md",
+      "response": [
+        {
+          "id": "participant-signature",
+          "prompt": "By checking the box below, you confirm that you have read and understood the information above and agree to participate in this study. This checkbox serves as your electronic signature.",
+          "location": "belowStimulus",
+          "type": "checkbox",
+          "options": [
+            "I confirm that I have read and understood the information above and agree to participate in this study."
+          ],
+          "required": true
+        }
+      ]
+    },
+    "charts-intro": {
+      "type": "markdown",
+      "path": "ckd-study-d/assets/charts-intro.md",
+      "response": []
+    },
+    "donut-chart-A": {
+      "description": "Positive Foreground, Mortality, Low Negativity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-A-valence",
+          "prompt": "Valence rating A",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-A-arousal",
+          "prompt": "Arousal rating A",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-A-dominance",
+          "prompt": "Dominance rating A",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-A",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 75,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 25,
+          "label": "people died"
+        }
+      }
+    },
+    "donut-chart-B": {
+      "description": "Negative Foreground, Mortality, Low Negativity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-B-valence",
+          "prompt": "Valence rating B",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-B-arousal",
+          "prompt": "Arousal rating B",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-B-dominance",
+          "prompt": "Dominance rating B",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-B",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 25,
+          "label": "people died"
+        },
+        "background": {
+          "count": 75,
+          "label": "people continued to live"
+        }
+      }
+    },
+    "donut-chart-C": {
+      "description": "Positive Foreground, Mortality, Medium Negativity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-C-valence",
+          "prompt": "Valence rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-C-arousal",
+          "prompt": "Arousal rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-C-dominance",
+          "prompt": "Dominance rating C",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-C",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 50,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 50,
+          "label": "people died"
+        }
+      }
+    },
+    "donut-chart-D": {
+      "description": "Negative Foreground, Mortality, Medium Negativity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-D-valence",
+          "prompt": "Valence rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-D-arousal",
+          "prompt": "Arousal rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-D-dominance",
+          "prompt": "Dominance rating D",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-D",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 50,
+          "label": "people died"
+        },
+        "background": {
+          "count": 50,
+          "label": "people continued to live"
+        }
+      }
+    },
+    "donut-chart-E": {
+      "description": "Positive Foreground, Mortality, High Negativity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-E-valence",
+          "prompt": "Valence rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-E-arousal",
+          "prompt": "Arousal rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-E-dominance",
+          "prompt": "Dominance rating E",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-E",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 25,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 75,
+          "label": "people died"
+        }
+      }
+    },
+    "donut-chart-F": {
+      "description": "Negative Foreground, Mortality, High Negativity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-F-valence",
+          "prompt": "Valence rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-F-arousal",
+          "prompt": "Arousal rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-F-dominance",
+          "prompt": "Dominance rating F",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-F",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of death</b> among 100 people with a health profile similar to yours.",
+        "foreground": {
+          "count": 75,
+          "label": "people died"
+        },
+        "background": {
+          "count": 25,
+          "label": "people continued to live"
+        }
+      }
+    },
+    "donut-chart-G": {
+      "description": "Postive Foreground, Treatment, Low Positivity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-G-valence",
+          "prompt": "Valence rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-G-arousal",
+          "prompt": "Arousal rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-G-dominance",
+          "prompt": "Dominance rating G",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-G",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
+        "foreground": {
+          "count": 25,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 75,
+          "label": "people did not get better"
+        }
+      }
+    },
+    "donut-chart-H": {
+      "description": "Negative Foreground, Treatment, Low Positivity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-H-valence",
+          "prompt": "Valence rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-H-arousal",
+          "prompt": "Arousal rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-H-dominance",
+          "prompt": "Dominance rating H",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-H",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
+        "foreground": {
+          "count": 75,
+          "label": "people did not get better"
+        },
+        "background": {
+          "count": 25,
+          "label": "people got better"
+        }
+      }
+    },
+    "donut-chart-I": {
+      "description": "Positive Foreground, Treatment, Medium Positivity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-I-valence",
+          "prompt": "Valence rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-I-arousal",
+          "prompt": "Arousal rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-I-dominance",
+          "prompt": "Dominance rating I",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-I",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
+        "foreground": {
+          "count": 50,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 50,
+          "label": "people did not get better"
+        }
+      }
+    },
+    "donut-chart-J": {
+      "description": "Negative Foreground, Treatment, Medium Positivity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-J-valence",
+          "prompt": "Valence rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-J-arousal",
+          "prompt": "Arousal rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-J-dominance",
+          "prompt": "Dominance rating J",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-J",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
+        "foreground": {
+          "count": 50,
+          "label": "people did not get better"
+        },
+        "background": {
+          "count": 50,
+          "label": "people got better"
+        }
+      }
+    },
+    "donut-chart-K": {
+      "description": "Positive Foreground, Treatment, High Positivity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-K-valence",
+          "prompt": "Valence rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-K-arousal",
+          "prompt": "Arousal rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-K-dominance",
+          "prompt": "Dominance rating K",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-K",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
+        "foreground": {
+          "count": 75,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 25,
+          "label": "people did not get better"
+        }
+      }
+    },
+    "donut-chart-L": {
+      "description": "Negative Foreground, Treatment, High Positivity",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/DonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "donut-chart-L-valence",
+          "prompt": "Valence rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-L-arousal",
+          "prompt": "Arousal rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "donut-chart-L-dominance",
+          "prompt": "Dominance rating L",
+          "required": true,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "donut-chart-L",
+        "probabilityStatement": "Imagine you have chronic kidney disease. Your recent kidney tests show noticeable changes in kidney function.<br><br>This visualization shows the five-year <b>probability of getting better</b> in kidney function among 100 people with a health profile similar to yours who received the same treatment.",
+        "foreground": {
+          "count": 25,
+          "label": "people did not get better"
+        },
+        "background": {
+          "count": 75,
+          "label": "people got better"
+        }
+      }
+    },
+    "minivlat-intro": {
+      "type": "markdown",
+      "path": "ckd-study-d/assets/minivlat-intro.md",
+      "response": []
+    },
+    "demographics-questionnaire": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "age-group",
+          "prompt": "What is your age?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "numerical",
+          "placeholder": "Enter your age in years e.g. 35"
+        },
+        {
+          "id": "gender-identity",
+          "prompt": "What is your gender identity?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Man",
+            "Woman",
+            "Non-binary",
+            "Two Spirit",
+            "Prefer not to answer"
+          ]
+        },
+        {
+          "id": "education-level",
+          "prompt": "What is the highest level of education you have attained?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "High school or equivalent",
+            "Vocational/technical school (2 year)",
+            "Some university",
+            "University graduate (4 year)",
+            "Master's degree",
+            "Doctoral degree (PhD)",
+            "Professional degree (MD, JD, etc)",
+            "Other"
+          ]
+        },
+        {
+          "id": "education-other",
+          "prompt": "If other, please specify:",
+          "required": false,
+          "type": "shortText",
+          "location": "aboveStimulus"
+        }
+      ]
+    },
+    "feedback": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "feedback",
+          "prompt": "Please provide any feedback or comments you may have about the study (optional)",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "longText"
+        }
+      ]
+    },
+    "attention-check-1": {
+      "description": "Attention Check 1 - SAM icon targets: valence 7, arousal 7, dominance 7",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/AttentionCheckDonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "attention-check-1-valence",
+          "prompt": "Attention check valence",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-1-arousal",
+          "prompt": "Attention check arousal",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-1-dominance",
+          "prompt": "Attention check dominance",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "attention-check-1-valence",
+          "answer": 7
+        },
+        {
+          "id": "attention-check-1-arousal",
+          "answer": 7
+        },
+        {
+          "id": "attention-check-1-dominance",
+          "answer": 7
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "attention-check-1",
+        "probabilityStatement": "This is an attention check.<br><br>Please select a rating of 7 for each question to confirm you are reading carefully.",
+        "foreground": {
+          "count": 50,
+          "label": "people continued to live"
+        },
+        "background": {
+          "count": 50,
+          "label": "people died"
+        },
+        "valenceTarget": 7,
+        "arousalTarget": 7,
+        "dominanceTarget": 7
+      }
+    },
+    "attention-check-2": {
+      "description": "Attention Check 2 - SAM icon targets: valence 2, arousal 2, dominance 2",
+      "type": "react-component",
+      "path": "ckd-study-d/assets/AttentionCheckDonutChart.tsx",
+      "sidebarWidth": 0,
+      "response": [
+        {
+          "id": "attention-check-2-valence",
+          "prompt": "Attention check valence",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-2-arousal",
+          "prompt": "Attention check arousal",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        },
+        {
+          "id": "attention-check-2-dominance",
+          "prompt": "Attention check dominance",
+          "required": false,
+          "location": "sidebar",
+          "type": "reactive",
+          "hidden": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "attention-check-2-valence",
+          "answer": 2
+        },
+        {
+          "id": "attention-check-2-arousal",
+          "answer": 2
+        },
+        {
+          "id": "attention-check-2-dominance",
+          "answer": 2
+        }
+      ],
+      "parameters": {
+        "totalIcons": 100,
+        "idPrefix": "attention-check-2",
+        "probabilityStatement": "This is an attention check.<br><br>Please select a rating of 2 for each question to confirm you are reading carefully.",
+        "foreground": {
+          "count": 50,
+          "label": "people got better"
+        },
+        "background": {
+          "count": 50,
+          "label": "people did not get better"
+        },
+        "valenceTarget": 2,
+        "arousalTarget": 2,
+        "dominanceTarget": 2
+      }
+    }
+  },
+  "importedLibraries": [
+    "mini-vlat"
+  ],
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      "consent-form",
+      "charts-intro",
+      {
+        "id": "order1",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-H",
+          "donut-chart-D",
+          "donut-chart-K",
+          "donut-chart-G",
+          "attention-check-1",
+          "donut-chart-F",
+          "donut-chart-J",
+          "donut-chart-C",
+          "donut-chart-A",
+          "attention-check-2",
+          "donut-chart-L",
+          "donut-chart-E",
+          "donut-chart-B",
+          "donut-chart-I"
+        ]
+      },
+      {
+        "id": "order2",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-G",
+          "donut-chart-J",
+          "donut-chart-C",
+          "donut-chart-E",
+          "attention-check-1",
+          "donut-chart-L",
+          "donut-chart-I",
+          "donut-chart-D",
+          "donut-chart-B",
+          "attention-check-2",
+          "donut-chart-K",
+          "donut-chart-F",
+          "donut-chart-H",
+          "donut-chart-A"
+        ]
+      },
+      {
+        "id": "order3",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-E",
+          "donut-chart-I",
+          "donut-chart-D",
+          "donut-chart-F",
+          "attention-check-1",
+          "donut-chart-K",
+          "donut-chart-A",
+          "donut-chart-J",
+          "donut-chart-H",
+          "attention-check-2",
+          "donut-chart-C",
+          "donut-chart-L",
+          "donut-chart-G",
+          "donut-chart-B"
+        ]
+      },
+      {
+        "id": "order4",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-F",
+          "donut-chart-A",
+          "donut-chart-J",
+          "donut-chart-L",
+          "attention-check-1",
+          "donut-chart-C",
+          "donut-chart-B",
+          "donut-chart-I",
+          "donut-chart-G",
+          "attention-check-2",
+          "donut-chart-D",
+          "donut-chart-K",
+          "donut-chart-E",
+          "donut-chart-H"
+        ]
+      },
+      {
+        "id": "order5",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-L",
+          "donut-chart-B",
+          "donut-chart-I",
+          "donut-chart-K",
+          "attention-check-1",
+          "donut-chart-D",
+          "donut-chart-H",
+          "donut-chart-A",
+          "donut-chart-E",
+          "attention-check-2",
+          "donut-chart-J",
+          "donut-chart-C",
+          "donut-chart-F",
+          "donut-chart-G"
+        ]
+      },
+      {
+        "id": "order6",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-K",
+          "donut-chart-H",
+          "donut-chart-A",
+          "donut-chart-C",
+          "attention-check-1",
+          "donut-chart-J",
+          "donut-chart-G",
+          "donut-chart-B",
+          "donut-chart-F",
+          "attention-check-2",
+          "donut-chart-I",
+          "donut-chart-D",
+          "donut-chart-L",
+          "donut-chart-E"
+        ]
+      },
+      {
+        "id": "order7",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-C",
+          "donut-chart-G",
+          "donut-chart-B",
+          "donut-chart-D",
+          "attention-check-1",
+          "donut-chart-I",
+          "donut-chart-E",
+          "donut-chart-H",
+          "donut-chart-L",
+          "attention-check-2",
+          "donut-chart-A",
+          "donut-chart-J",
+          "donut-chart-K",
+          "donut-chart-F"
+        ]
+      },
+      {
+        "id": "order8",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-D",
+          "donut-chart-E",
+          "donut-chart-H",
+          "donut-chart-J",
+          "attention-check-1",
+          "donut-chart-A",
+          "donut-chart-F",
+          "donut-chart-G",
+          "donut-chart-K",
+          "attention-check-2",
+          "donut-chart-B",
+          "donut-chart-I",
+          "donut-chart-C",
+          "donut-chart-L"
+        ]
+      },
+      {
+        "id": "order9",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-J",
+          "donut-chart-F",
+          "donut-chart-G",
+          "donut-chart-I",
+          "attention-check-1",
+          "donut-chart-B",
+          "donut-chart-L",
+          "donut-chart-E",
+          "donut-chart-C",
+          "attention-check-2",
+          "donut-chart-H",
+          "donut-chart-A",
+          "donut-chart-D",
+          "donut-chart-K"
+        ]
+      },
+      {
+        "id": "order10",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-I",
+          "donut-chart-L",
+          "donut-chart-E",
+          "donut-chart-A",
+          "attention-check-1",
+          "donut-chart-H",
+          "donut-chart-K",
+          "donut-chart-F",
+          "donut-chart-D",
+          "attention-check-2",
+          "donut-chart-G",
+          "donut-chart-B",
+          "donut-chart-J",
+          "donut-chart-C"
+        ]
+      },
+      {
+        "id": "order11",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-A",
+          "donut-chart-K",
+          "donut-chart-F",
+          "donut-chart-B",
+          "attention-check-1",
+          "donut-chart-G",
+          "donut-chart-C",
+          "donut-chart-L",
+          "donut-chart-J",
+          "attention-check-2",
+          "donut-chart-E",
+          "donut-chart-H",
+          "donut-chart-I",
+          "donut-chart-D"
+        ]
+      },
+      {
+        "id": "order12",
+        "conditional": true,
+        "order": "fixed",
+        "components": [
+          "donut-chart-B",
+          "donut-chart-C",
+          "donut-chart-L",
+          "donut-chart-H",
+          "attention-check-1",
+          "donut-chart-E",
+          "donut-chart-D",
+          "donut-chart-K",
+          "donut-chart-I",
+          "attention-check-2",
+          "donut-chart-F",
+          "donut-chart-G",
+          "donut-chart-A",
+          "donut-chart-J"
+        ]
+      },
+      "minivlat-intro",
+      "$mini-vlat.sequences.full",
+      "demographics-questionnaire",
+      "feedback"
+    ]
+  }
+}
